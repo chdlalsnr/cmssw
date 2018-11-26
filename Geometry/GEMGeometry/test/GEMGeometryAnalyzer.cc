@@ -156,7 +156,7 @@ GEMGeometryAnalyzer::analyze( const edm::Event& /*iEvent*/, const edm::EventSetu
 	     *   sum of all dx + gap = chamber height
 	     */      
 	    
-	    for (auto roll : rolls){
+	      for (auto roll : rolls){
 	      GEMDetId rId(roll->id());
 	      ofos<<"            GEMEtaPartition " << k << ", GEMDetId = " << rId.rawId() << ", " << rId << endl;
 	      

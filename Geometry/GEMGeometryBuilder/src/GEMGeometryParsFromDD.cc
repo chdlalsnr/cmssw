@@ -105,6 +105,7 @@ GEMGeometryParsFromDD::buildSuperChamber(DDFilteredView& fv, GEMDetId detId, Rec
   std::vector<double> dpar = solid.solidA().parameters();
   
   double dy = dpar[0];//length is along local Y
+  //std::cout << dy << std::endl;
   double dz = dpar[3];// thickness is long local Z
   double dx1= dpar[4];// bottom width is along local X
   double dx2= dpar[8];// top width is along local X

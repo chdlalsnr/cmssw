@@ -163,6 +163,7 @@ GEMEtaPartition* GEMGeometryBuilderFromCondDB::buildEtaPartition(const RecoIdeal
   
   std::vector<double>::const_iterator shapeStart = rgeo.shapeStart( gid );  
   float be = *(shapeStart+0)/cm;
+  //std::cout << be << std::endl;
   float te = *(shapeStart+1)/cm;
   float ap = *(shapeStart+2)/cm;
   float ti = *(shapeStart+3)/cm;

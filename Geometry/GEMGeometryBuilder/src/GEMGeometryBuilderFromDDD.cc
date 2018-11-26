@@ -19,6 +19,20 @@
 
 #include "CLHEP/Units/GlobalSystemOfUnits.h"
 
+#include "FWCore/Framework/interface/Frameworkfwd.h"
+#include "FWCore/Framework/interface/one/EDAnalyzer.h"
+#include "FWCore/Framework/interface/Event.h"
+#include "FWCore/Framework/interface/EventSetup.h"
+#include "FWCore/Framework/interface/ESHandle.h"
+#include "FWCore/ParameterSet/interface/ParameterSet.h"
+
+#include "Geometry/CommonTopologies/interface/StripTopology.h"
+
+#include "DataFormats/Math/interface/deltaPhi.h"
+
+
+
+
 #include <algorithm>
 #include <iostream>
 #include <string>
@@ -45,7 +59,7 @@ GEMGeometryBuilderFromDDD::build( const std::shared_ptr<GEMGeometry>& theGeometr
   LogDebug("GEMGeometryBuilderFromDDD") << "About to run through the GEM structure\n" 
 					<< " First logical part "
 					<< fv.logicalPart().name().name(); 
-
+  int i = 0;
   bool doSuper = fv.firstChild();
   LogDebug("GEMGeometryBuilderFromDDD") << "doSuperChamber = " << doSuper;
   // loop over superchambers
@@ -61,32 +75,37 @@ GEMGeometryBuilderFromDDD::build( const std::shared_ptr<GEMGeometry>& theGeometr
     fv.parent();fv.parent();
 
     // currently there is no superchamber in the geometry
+    // nDDDConstants
     // only 2 chambers are present separated by a gap.
     // making superchamber out of the first chamber layer including the gap between chambers
-    if (detIdCh.layer() == 1){// only make superChambers when doing layer 1
-      GEMSuperChamber *gemSuperChamber = buildSuperChamber(fv, detIdCh);
+    //if (detIdCh.layer() == 1){// only make superChambers when doing layer 1
+      GEMSuperChamber *gemSuperChamber = buildSuperChamber(fv, detIdCh, i);
       theGeometry->add(gemSuperChamber);
-    }
+    //}
     GEMChamber *gemChamber = buildChamber(fv, detIdCh);
-    
+    i++;
     // loop over chambers
     // only 1 chamber
+    //int j = 1;
     bool doChambers = fv.firstChild();
-    while (doChambers){
+    while (doChambers){ //j++;
       
     // loop over GEMEtaPartitions
+      int k = 1;
       bool doEtaPart = fv.firstChild();
-      while (doEtaPart){
-
+      while (doEtaPart){ 
 	MuonDDDNumbering mdddnum(muonConstants);
 	GEMNumberingScheme gemNum(muonConstants);
-	int rawid = gemNum.baseNumberToUnitNumber(mdddnum.geoHistoryToBaseNumber(fv.geoHistory()));
-	GEMDetId detId = GEMDetId(rawid);
+        int rawid = gemNum.baseNumberToUnitNumber(mdddnum.geoHistoryToBaseNumber(fv.geoHistory()));
+        GEMDetId detId = GEMDetId(rawid);
 
-	GEMEtaPartition *etaPart = buildEtaPartition(fv, detId);
+	std::cout << "##" << k << "   DetId is " << detId << ". " << std::endl;
+
+	GEMEtaPartition *etaPart = buildEtaPartition(fv, detId, i, k);
 	gemChamber->add(etaPart);
 	theGeometry->add(etaPart);
 	doEtaPart = fv.nextSibling();
+        k++;
       }
       fv.parent();
 
@@ -108,6 +127,7 @@ GEMGeometryBuilderFromDDD::build( const std::shared_ptr<GEMGeometry>& theGeometr
       std::string sign( re==-1 ? "-" : "");
       std::string name("GE" + sign + std::to_string(st) + "/1");
       station->setName(name);
+      //std::cout << st << std::endl;
       for (int ri=1; ri<=1; ++ri) {
 	GEMRing* ring = new GEMRing(re, st, ri);
 	for (auto sch : superChambers){
@@ -137,7 +157,8 @@ GEMGeometryBuilderFromDDD::build( const std::shared_ptr<GEMGeometry>& theGeometr
 
 GEMSuperChamber*
 GEMGeometryBuilderFromDDD::buildSuperChamber( DDFilteredView& fv,
-					      GEMDetId detId ) const
+					      GEMDetId detId,
+                                              int i ) const
 {
   LogDebug("GEMGeometryBuilderFromDDD") << "buildSuperChamber "
 					<< fv.logicalPart().name().name()
@@ -147,14 +168,33 @@ GEMGeometryBuilderFromDDD::buildSuperChamber( DDFilteredView& fv,
   std::vector<double> dpar = solid.solidA().parameters();
   
   double dy = dpar[0]/cm;//length is along local Y
+  //std::cout << dy << std::endl;
   double dz = dpar[3]/cm;// thickness is long local Z
+  //std::cout << dz << std::endl;
   double dx1= dpar[4]/cm;// bottom width is along local X
+  //std::cout << dx1 << std::endl;
   double dx2= dpar[8]/cm;// top width is along local X
+  //std::cout << dx2 << std::endl;
   dpar = solid.solidB().parameters();
   dz += dpar[3]/cm;// chamber thickness
   dz *=2; // 2 chambers in superchamber
   dz += 2.105;// gap between chambers
+
+ /* 
+  MuonDDDNumbering mdddnum(MuonDDDConstants);
+  GEMNumberingScheme gemNum(MuonDDDConstants);
+  int rawid = gemNum.baseNumberToUnitNumber(mdddnum.geoHistoryToBaseNumber(fv.geoHistory()));
+ */
+  /*
+  const edm::EventSetup& iSetup 
+  edm::ESHandle<GEMGeometry> pDD;
+  iSetup.get<MuonGeometryRecord>().get(pDD);
+  */
+  //for (auto  sch: pDD->superChambers) { GEMDetId schId(sch->id()); }
   
+  std::cout << "# " << i << ". dy = " << dy << "cm, dz = " << dz << "cm, dx1 = " << dx1 << "cm, dx2 = " << dx2 << "cm." << std::endl; 
+  //std::cout << "# " << i << "   dy = " << dy << "cm, dz = " << dz << "cm, dx1 = " << dx1 << "cm, dx2 = " << dx2 << "cm, dz = " << dz << "." << std::endl;
+
   bool isOdd = detId.chamber()%2;
   RCPBoundPlane surf( boundPlane( fv, new TrapezoidalPlaneBounds( dx1, dx2, dy, dz), isOdd ));
   
@@ -176,6 +216,7 @@ GEMGeometryBuilderFromDDD::buildChamber( DDFilteredView& fv,
   std::vector<double> dpar = solid.solidA().parameters();
   
   double dy = dpar[0]/cm;//length is along local Y
+  //std::cout << dy << std::endl;
   double dz = dpar[3]/cm;// thickness is long local Z
   double dx1= dpar[4]/cm;// bottom width is along local X
   double dx2= dpar[8]/cm;// top width is along local X
@@ -193,7 +234,8 @@ GEMGeometryBuilderFromDDD::buildChamber( DDFilteredView& fv,
 
 GEMEtaPartition*
 GEMGeometryBuilderFromDDD::buildEtaPartition( DDFilteredView& fv,
-					      GEMDetId detId ) const
+					      GEMDetId detId,
+                                              int i, int k ) const
 {
   LogDebug("GEMGeometryBuilderFromDDD") << "buildEtaPartition "
 					<< fv.logicalPart().name().name()
@@ -219,9 +261,24 @@ GEMGeometryBuilderFromDDD::buildEtaPartition( DDFilteredView& fv,
 
   double be = dpar[4]/cm; // half bottom edge
   double te = dpar[8]/cm; // half top edge
+  //std::cout << te << std::endl;
   double ap = dpar[0]/cm; // half apothem
+  //std::cout << ap << std::endl;
   double ti = 0.4/cm;     // half thickness
-  
+/*
+  MuonDDDNumbering mdddnum(MuonDDDConstants);
+  GEMNumberingScheme gemNum(MuonDDDConstants);
+  int rawid = gemNum.baseNumberToUnitNumber(mdddnum.geoHistoryToBaseNumber(fv.geoHistory()));
+*/  
+  /*
+  const edm::EventSetup& iSetup
+  edm::ESHandle<GEMGeometry> pDD;
+  iSetup.get<MuonGeometryRecord>().get(pDD);
+  */
+  //for (auto roll: pDD->etaPartitions()) { GEMDetId rId(roll->id()); }
+  std::cout << ".   The eta-partition " << k << ". be = " << be << "cm, te = " << te << "cm, ap = " << ap << "cm, ti = 0.4cm." << std::endl;   
+  //std::cout << "## " << i << "   The eta-partition " << k << ". be = " << be << "cm, te = " << te << "cm, ap = " << ap << "cm, ti = 0.4cm." << std::endl;  
+ 
   std::vector<float> pars;
   pars.emplace_back(be); 
   pars.emplace_back(te); 
