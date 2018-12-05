@@ -1,0 +1,140 @@
+======================== Opening output file
+GEMGeometryAnalyzer: Analyzer...
+start --------------------------------------------------------------------------------------------------------
+ Geometry node for GEMGeom is  0x7f582adfc410
+ detTypes       	80
+ GeomDetUnit       	80
+ GeomDet           	95
+ GeomDetUnit DetIds	80
+ eta partitions 	80
+ chambers       	10
+ super chambers  	5
+ rings  		4
+ stations  		4
+ regions  		2
+ total number of strips	30720
+ total number of pads  	15360
+GEMGeometryAnalyzer: Begin iteration over geometry...
+iter --------------------------------------------------------------------------------------------------------
+GEMGeometryAnalyzerBegin GEMGeometry structure TEST
+ Re -1 Ri 1 St 1 La 0 Ch 1 Ro 0 , center x: 183.25 cm, center y: 1.86096e-13 cm, center z: -567.63 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 1 Ro 0 , center x: 183.25 cm, center y: 1.86096e-13 cm, center z: -567.63 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 1 Ro 1 , x: 227.973 cm, y: 1.80745e-13 cm, z: -567.971 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 8.3275 cm , te: 20.9789 cm , be: 19.5003 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 1 Ro 2 , x: 211.268 cm, y: 1.8279e-13 cm, z: -567.971 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 8.3275 cm , te: 19.4959 cm , be: 18.0172 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 1 Ro 3 , x: 195.862 cm, y: 1.84677e-13 cm, z: -567.971 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 7.0285 cm , te: 18.0128 cm , be: 16.7648 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 1 Ro 4 , x: 181.755 cm, y: 1.86405e-13 cm, z: -567.971 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 7.0285 cm , te: 16.7603 cm , be: 15.5123 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 1 Ro 5 , x: 168.698 cm, y: 1.88004e-13 cm, z: -567.971 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 5.9785 cm , te: 15.5079 cm , be: 14.4464 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 1 Ro 6 , x: 156.691 cm, y: 1.89474e-13 cm, z: -567.971 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 5.9785 cm , te: 14.4419 cm , be: 13.3804 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 1 Ro 7 , x: 145.559 cm, y: 1.90837e-13 cm, z: -567.971 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 5.103 cm , te: 13.3759 cm , be: 12.4698 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 1 Ro 8 , x: 135.303 cm, y: 1.92093e-13 cm, z: -567.971 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 5.103 cm , te: 12.4654 cm , be: 11.5593 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 1 Ro 0 , center x: 183.25 cm, center y: 1.87507e-13 cm, center z: -571.47 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 1 Ro 1 , x: 227.973 cm, y: 1.82155e-13 cm, z: -571.811 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 8.3275 cm , te: 20.9789 cm , be: 19.5003 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 1 Ro 2 , x: 211.268 cm, y: 1.84201e-13 cm, z: -571.811 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 8.3275 cm , te: 19.4959 cm , be: 18.0172 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 1 Ro 3 , x: 195.862 cm, y: 1.86088e-13 cm, z: -571.811 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 7.0285 cm , te: 18.0128 cm , be: 16.7648 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 1 Ro 4 , x: 181.755 cm, y: 1.87815e-13 cm, z: -571.811 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 7.0285 cm , te: 16.7603 cm , be: 15.5123 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 1 Ro 5 , x: 168.698 cm, y: 1.89414e-13 cm, z: -571.811 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 5.9785 cm , te: 15.5079 cm , be: 14.4464 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 1 Ro 6 , x: 156.691 cm, y: 1.90885e-13 cm, z: -571.811 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 5.9785 cm , te: 14.4419 cm , be: 13.3804 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 1 Ro 7 , x: 145.559 cm, y: 1.92248e-13 cm, z: -571.811 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 5.103 cm , te: 13.3759 cm , be: 12.4698 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 1 Ro 8 , x: 135.303 cm, y: 1.93504e-13 cm, z: -571.811 cm, 1stStrip: -5.03404 deg, lastStrip: 5.08661 deg, ap: 5.103 cm , te: 12.4654 cm , be: 11.5593 cm.
+ 
+ Re -1 Ri 1 St 1 La 0 Ch 27 Ro 0 , center x: -31.8211 cm, center y: -180.466 cm, center z: -567.63 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 27 Ro 0 , center x: -31.8211 cm, center y: -180.466 cm, center z: -567.63 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 27 Ro 1 , x: -39.587 cm, y: -224.509 cm, z: -567.971 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 8.3275 cm , te: 20.9789 cm , be: 19.5003 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 27 Ro 2 , x: -36.6862 cm, y: -208.058 cm, z: -567.971 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 8.3275 cm , te: 19.4959 cm , be: 18.0172 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 27 Ro 3 , x: -34.011 cm, y: -192.886 cm, z: -567.971 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 7.0285 cm , te: 18.0128 cm , be: 16.7648 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 27 Ro 4 , x: -31.5614 cm, y: -178.993 cm, z: -567.971 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 7.0285 cm , te: 16.7603 cm , be: 15.5123 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 27 Ro 5 , x: -29.294 cm, y: -166.135 cm, z: -567.971 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 5.9785 cm , te: 15.5079 cm , be: 14.4464 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 27 Ro 6 , x: -27.209 cm, y: -154.31 cm, z: -567.971 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 5.9785 cm , te: 14.4419 cm , be: 13.3804 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 27 Ro 7 , x: -25.2761 cm, y: -143.348 cm, z: -567.971 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 5.103 cm , te: 13.3759 cm , be: 12.4698 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 27 Ro 8 , x: -23.4951 cm, y: -133.248 cm, z: -567.971 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 5.103 cm , te: 12.4654 cm , be: 11.5593 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 27 Ro 0 , center x: -31.8211 cm, center y: -180.466 cm, center z: -571.47 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 27 Ro 1 , x: -39.587 cm, y: -224.509 cm, z: -571.811 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 8.3275 cm , te: 20.9789 cm , be: 19.5003 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 27 Ro 2 , x: -36.6862 cm, y: -208.058 cm, z: -571.811 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 8.3275 cm , te: 19.4959 cm , be: 18.0172 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 27 Ro 3 , x: -34.011 cm, y: -192.886 cm, z: -571.811 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 7.0285 cm , te: 18.0128 cm , be: 16.7648 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 27 Ro 4 , x: -31.5614 cm, y: -178.993 cm, z: -571.811 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 7.0285 cm , te: 16.7603 cm , be: 15.5123 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 27 Ro 5 , x: -29.294 cm, y: -166.135 cm, z: -571.811 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 5.9785 cm , te: 15.5079 cm , be: 14.4464 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 27 Ro 6 , x: -27.209 cm, y: -154.31 cm, z: -571.811 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 5.9785 cm , te: 14.4419 cm , be: 13.3804 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 27 Ro 7 , x: -25.2761 cm, y: -143.348 cm, z: -571.811 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 5.103 cm , te: 13.3759 cm , be: 12.4698 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 27 Ro 8 , x: -23.4951 cm, y: -133.248 cm, z: -571.811 cm, 1stStrip: -105.034 deg, lastStrip: -94.9134 deg, ap: 5.103 cm , te: 12.4654 cm , be: 11.5593 cm.
+ 
+ Re -1 Ri 1 St 1 La 0 Ch 28 Ro 0 , center x: -2.33471e-14 cm, center y: -190.65 cm, center z: -565.71 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 28 Ro 0 , center x: -2.33471e-14 cm, center y: -190.65 cm, center z: -565.71 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 28 Ro 1 , x: -2.95617e-14 cm, y: -241.398 cm, z: -565.369 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 9.7025 cm , te: 22.2929 cm , be: 20.5701 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 28 Ro 2 , x: -2.71792e-14 cm, y: -221.943 cm, z: -565.369 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 9.7025 cm , te: 20.5657 cm , be: 18.8429 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 28 Ro 3 , x: -2.49987e-14 cm, y: -204.137 cm, z: -565.369 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 8.0535 cm , te: 18.8384 cm , be: 17.4084 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 28 Ro 4 , x: -2.30201e-14 cm, y: -187.98 cm, z: -565.369 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 8.0535 cm , te: 17.404 cm , be: 15.974 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 28 Ro 5 , x: -2.12038e-14 cm, y: -173.148 cm, z: -565.369 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 6.728 cm , te: 15.9696 cm , be: 14.7749 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 28 Ro 6 , x: -1.95499e-14 cm, y: -159.642 cm, z: -565.369 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 6.728 cm , te: 14.7705 cm , be: 13.5759 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 28 Ro 7 , x: -1.80275e-14 cm, y: -147.211 cm, z: -565.369 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 5.6535 cm , te: 13.5714 cm , be: 12.5676 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 28 Ro 8 , x: -1.66367e-14 cm, y: -135.854 cm, z: -565.369 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 5.6535 cm , te: 12.5631 cm , be: 11.5593 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 28 Ro 0 , center x: -2.33471e-14 cm, center y: -190.65 cm, center z: -569.55 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 28 Ro 1 , x: -2.95617e-14 cm, y: -241.398 cm, z: -569.209 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 9.7025 cm , te: 22.2929 cm , be: 20.5701 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 28 Ro 2 , x: -2.71792e-14 cm, y: -221.943 cm, z: -569.209 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 9.7025 cm , te: 20.5657 cm , be: 18.8429 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 28 Ro 3 , x: -2.49987e-14 cm, y: -204.137 cm, z: -569.209 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 8.0535 cm , te: 18.8384 cm , be: 17.4084 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 28 Ro 4 , x: -2.30201e-14 cm, y: -187.98 cm, z: -569.209 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 8.0535 cm , te: 17.404 cm , be: 15.974 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 28 Ro 5 , x: -2.12038e-14 cm, y: -173.148 cm, z: -569.209 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 6.728 cm , te: 15.9696 cm , be: 14.7749 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 28 Ro 6 , x: -1.95499e-14 cm, y: -159.642 cm, z: -569.209 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 6.728 cm , te: 14.7705 cm , be: 13.5759 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 28 Ro 7 , x: -1.80275e-14 cm, y: -147.211 cm, z: -569.209 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 5.6535 cm , te: 13.5714 cm , be: 12.5676 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 28 Ro 8 , x: -1.66367e-14 cm, y: -135.854 cm, z: -569.209 cm, 1stStrip: -84.966 deg, lastStrip: -95.0866 deg, ap: 5.6535 cm , te: 12.5631 cm , be: 11.5593 cm.
+ 
+ Re -1 Ri 1 St 1 La 0 Ch 29 Ro 0 , center x: 31.8211 cm, center y: -180.466 cm, center z: -567.63 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 29 Ro 0 , center x: 31.8211 cm, center y: -180.466 cm, center z: -567.63 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 29 Ro 1 , x: 39.587 cm, y: -224.509 cm, z: -567.971 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 8.3275 cm , te: 20.9789 cm , be: 19.5003 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 29 Ro 2 , x: 36.6862 cm, y: -208.058 cm, z: -567.971 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 8.3275 cm , te: 19.4959 cm , be: 18.0172 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 29 Ro 3 , x: 34.011 cm, y: -192.886 cm, z: -567.971 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 7.0285 cm , te: 18.0128 cm , be: 16.7648 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 29 Ro 4 , x: 31.5614 cm, y: -178.993 cm, z: -567.971 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 7.0285 cm , te: 16.7603 cm , be: 15.5123 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 29 Ro 5 , x: 29.294 cm, y: -166.135 cm, z: -567.971 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 5.9785 cm , te: 15.5079 cm , be: 14.4464 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 29 Ro 6 , x: 27.209 cm, y: -154.31 cm, z: -567.971 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 5.9785 cm , te: 14.4419 cm , be: 13.3804 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 29 Ro 7 , x: 25.2761 cm, y: -143.348 cm, z: -567.971 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 5.103 cm , te: 13.3759 cm , be: 12.4698 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 29 Ro 8 , x: 23.4951 cm, y: -133.248 cm, z: -567.971 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 5.103 cm , te: 12.4654 cm , be: 11.5593 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 29 Ro 0 , center x: 31.8211 cm, center y: -180.466 cm, center z: -571.47 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 29 Ro 1 , x: 39.587 cm, y: -224.509 cm, z: -571.811 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 8.3275 cm , te: 20.9789 cm , be: 19.5003 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 29 Ro 2 , x: 36.6862 cm, y: -208.058 cm, z: -571.811 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 8.3275 cm , te: 19.4959 cm , be: 18.0172 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 29 Ro 3 , x: 34.011 cm, y: -192.886 cm, z: -571.811 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 7.0285 cm , te: 18.0128 cm , be: 16.7648 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 29 Ro 4 , x: 31.5614 cm, y: -178.993 cm, z: -571.811 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 7.0285 cm , te: 16.7603 cm , be: 15.5123 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 29 Ro 5 , x: 29.294 cm, y: -166.135 cm, z: -571.811 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 5.9785 cm , te: 15.5079 cm , be: 14.4464 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 29 Ro 6 , x: 27.209 cm, y: -154.31 cm, z: -571.811 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 5.9785 cm , te: 14.4419 cm , be: 13.3804 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 29 Ro 7 , x: 25.2761 cm, y: -143.348 cm, z: -571.811 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 5.103 cm , te: 13.3759 cm , be: 12.4698 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 29 Ro 8 , x: 23.4951 cm, y: -133.248 cm, z: -571.811 cm, 1stStrip: -85.034 deg, lastStrip: -74.9134 deg, ap: 5.103 cm , te: 12.4654 cm , be: 11.5593 cm.
+ 
+ Re -1 Ri 1 St 1 La 0 Ch 30 Ro 0 , center x: 65.2062 cm, center y: -179.153 cm, center z: -565.71 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 30 Ro 0 , center x: 65.2062 cm, center y: -179.153 cm, center z: -565.71 cm.
+ 
+ Re -1 Ri 1 St 1 La 1 Ch 30 Ro 1 , x: 82.5629 cm, y: -226.84 cm, z: -565.369 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 9.7025 cm , te: 22.2929 cm , be: 20.5701 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 30 Ro 2 , x: 75.9089 cm, y: -208.558 cm, z: -565.369 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 9.7025 cm , te: 20.5657 cm , be: 18.8429 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 30 Ro 3 , x: 69.8188 cm, y: -191.826 cm, z: -565.369 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 8.0535 cm , te: 18.8384 cm , be: 17.4084 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 30 Ro 4 , x: 64.2928 cm, y: -176.643 cm, z: -565.369 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 8.0535 cm , te: 17.404 cm , be: 15.974 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 30 Ro 5 , x: 59.2201 cm, y: -162.706 cm, z: -565.369 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 6.728 cm , te: 15.9696 cm , be: 14.7749 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 30 Ro 6 , x: 54.6008 cm, y: -150.015 cm, z: -565.369 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 6.728 cm , te: 14.7705 cm , be: 13.5759 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 30 Ro 7 , x: 50.349 cm, y: -138.333 cm, z: -565.369 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 5.6535 cm , te: 13.5714 cm , be: 12.5676 cm.
+ Re -1 Ri 1 St 1 La 1 Ch 30 Ro 8 , x: 46.4647 cm, y: -127.661 cm, z: -565.369 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 5.6535 cm , te: 12.5631 cm , be: 11.5593 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 30 Ro 0 , center x: 65.2062 cm, center y: -179.153 cm, center z: -569.55 cm.
+ 
+ Re -1 Ri 1 St 1 La 2 Ch 30 Ro 1 , x: 82.5629 cm, y: -226.84 cm, z: -569.209 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 9.7025 cm , te: 22.2929 cm , be: 20.5701 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 30 Ro 2 , x: 75.9089 cm, y: -208.558 cm, z: -569.209 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 9.7025 cm , te: 20.5657 cm , be: 18.8429 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 30 Ro 3 , x: 69.8188 cm, y: -191.826 cm, z: -569.209 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 8.0535 cm , te: 18.8384 cm , be: 17.4084 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 30 Ro 4 , x: 64.2928 cm, y: -176.643 cm, z: -569.209 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 8.0535 cm , te: 17.404 cm , be: 15.974 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 30 Ro 5 , x: 59.2201 cm, y: -162.706 cm, z: -569.209 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 6.728 cm , te: 15.9696 cm , be: 14.7749 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 30 Ro 6 , x: 54.6008 cm, y: -150.015 cm, z: -569.209 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 6.728 cm , te: 14.7705 cm , be: 13.5759 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 30 Ro 7 , x: 50.349 cm, y: -138.333 cm, z: -569.209 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 5.6535 cm , te: 13.5714 cm , be: 12.5676 cm.
+ Re -1 Ri 1 St 1 La 2 Ch 30 Ro 8 , x: 46.4647 cm, y: -127.661 cm, z: -569.209 cm, 1stStrip: -64.966 deg, lastStrip: -75.0866 deg, ap: 5.6535 cm , te: 12.5631 cm , be: 11.5593 cm.
+ 
+-------------------------------------------------------------------------------------------------------- end

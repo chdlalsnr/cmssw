@@ -37,12 +37,14 @@ public:
   void analyze(edm::Event const& iEvent, edm::EventSetup const&) override;
   void endJob() override {}
 
-  static bool sortCh(const GEMChamber &a, const GEMChamber &b){
+  static bool sortCh(const GEMSuperChamber &a, const GEMSuperChamber &b){
     if (a.id().region() == b.id().region()){
       if (a.id().station() == b.id().station()){
-        if (a.id().chamber() == b.id().chamber()){
-          return a.id().layer() < b.id().layer();
-        }else{ return a.id().chamber() < b.id().chamber();}
+        if (a.id().superChamberId() == b.id().superChamberId()){
+          if (a.id().chamber() == b.id().chamber()){
+            return a.id().layer() < b.id().layer();
+          }else{ return a.id().chamber() < b.id().chamber();}
+        }else{ return a.id().superChamberId() < b.id().superChamberId();}
       }else{ return a.id().station() < b.id().station();}
     }else{ return a.id().region() < b.id().region();}
   };
@@ -55,7 +57,7 @@ private:
   const std::string dashedLine_;
   const std::string myName_;
   std::ofstream ofos;
-  std::vector<GEMChamber> gemChambers_;
+  std::vector<GEMSuperChamber> gemChambers_;
 
 };
 
@@ -120,12 +122,12 @@ GEMGeometryAnalyzer::analyze( const edm::Event& /*iEvent*/, const edm::EventSetu
   // checking uniqueness of chamber detIds
   bool flagNonUniqueChID = false;
   bool flagNonUniqueChRawID = false;
-  for (auto ch1 : pDD->chambers()){
-    gemChambers_.push_back(*ch1);
-    for (auto ch2 : pDD->chambers()){
-      if (ch1 != ch2){
-	if (ch1->id() == ch2->id()) flagNonUniqueChID = true;
-	if (ch1->id().rawId() == ch2->id().rawId()) flagNonUniqueChRawID = true;
+  for (auto sch1 : pDD->superChambers()){
+    gemChambers_.push_back(*sch1);
+    for (auto sch2 : pDD->superChambers()){
+      if (sch1 != sch2){
+	if (sch1->id() == sch2->id()) flagNonUniqueChID = true;
+	if (sch1->id().rawId() == sch2->id().rawId()) flagNonUniqueChRawID = true;
       }
     }
   }
@@ -138,31 +140,53 @@ GEMGeometryAnalyzer::analyze( const edm::Event& /*iEvent*/, const edm::EventSetu
   
   //----------------------- Global GEMGeometry TEST -------------------------------------------------------
   ofos << myName() << "Begin GEMGeometry structure TEST" << endl;
-  
-  for(auto ch:gemChambers_){
-    for (auto roll:ch.etaPartitions()){
-      const BoundPlane& bSurface(roll->surface());
-    //const StripTopology* topology(&(roll->specificTopology()));
-      auto& parameters(roll->specs()->parameters());
-      float bottomEdge(parameters[0]);
-      float topEdge(parameters[1]);
-      float height(parameters[2]);
-      float nStrips(parameters[3]);
-      float nPads(parameters[4]);
-
+ 
+  //for(auto ch:regions_){
+    for (auto sch : gemChambers_){  
+      const BoundPlane& bSurface(sch.surface());
+      //const StripTopology* topology(&(sch->specificTopology()));
 
       LocalPoint  lCentre( 0., 0., 0. );
       GlobalPoint gCentre(bSurface.toGlobal(lCentre));
-      LocalPoint  lTop( 0.,height, 0.);
-      GlobalPoint gTop(bSurface.toGlobal(lTop));
-      LocalPoint  lBottom( 0., -height,0.);
-      GlobalPoint gBottom(bSurface.toGlobal(lBottom));
 
-      //auto roll = ch.etaPartitions()[1];
-      ofos << ch.id() <<", x: "<<gCentre.x() <<", y: "<< gCentre.y() <<", z: " << gCentre.z() << ", 1stStrip: " << roll->toGlobal(roll->centreOfStrip(1)).phi().degrees()<< ", lastStrip: " << roll->toGlobal(roll->centreOfStrip(roll->nstrips())).phi().degrees() << std::endl;
-      ofos << roll->id() << ", height: "<< height  <<", top: "<< gTop.z() << ", center: " << gCentre.z() <<", bottom: "<< gBottom.z() <<std::endl;
+      ofos << sch.id() << ", center x: " << gCentre.x() << " cm, center y: " <<  gCentre.y() << " cm, center z: " << gCentre.z() << " cm." << std::endl;
+      ofos << " " << std::endl;
+
+      for (auto ch : sch.chambers()){
+
+        const BoundPlane& bSurface(ch->surface());
+        //const StripTopology* topology(&(ch->specificTopology()));
+
+        LocalPoint  lCentre( 0., 0., 0. );
+        GlobalPoint gCentre(bSurface.toGlobal(lCentre));
+
+        ofos << ch->id() << ", center x: " << gCentre.x() << " cm, center y: " <<  gCentre.y() << " cm, center z: " << gCentre.z() << " cm." << std::endl; 
+        ofos << " " << std::endl;
+
+        for (auto roll : ch->etaPartitions()){
+          const BoundPlane& bSurface(roll->surface());
+          //const StripTopology* topology(&(roll->specificTopology()));
+          auto& parameters(roll->specs()->parameters());
+          float bottomEdge(parameters[0]);
+          float topEdge(parameters[1]);
+          float height(parameters[2]);
+          //float nStrips(parameters[3]);
+          //float nPads(parameters[4]);
+
+          LocalPoint  lCentre( 0., 0., 0. );
+          GlobalPoint gCentre(bSurface.toGlobal(lCentre));
+          LocalPoint  lTop( 0.,height, 0.);
+          GlobalPoint gTop(bSurface.toGlobal(lTop));
+          LocalPoint  lBottom( 0., -height,0.);
+          GlobalPoint gBottom(bSurface.toGlobal(lBottom));
+
+          //auto roll = ch.etaPartitions()[1];
+          ofos << roll->id() << ", x: "<< gCentre.x() << " cm, y: " << gCentre.y() << " cm, z: " << gCentre.z() << " cm, 1stStrip: " << roll->toGlobal(roll->centreOfStrip(1)).phi().degrees() << " deg, lastStrip: " << roll->toGlobal(roll->centreOfStrip(roll->nstrips())).phi().degrees() << " deg, ap: " << height  << " cm , te: " << topEdge << " cm , be: " << bottomEdge << " cm." << std::endl;
+        }
+        ofos << " " << std::endl;
+      }
     }
-  }
+  //}
   ofos << dashedLine_ << " end" << std::endl;
 }
 
