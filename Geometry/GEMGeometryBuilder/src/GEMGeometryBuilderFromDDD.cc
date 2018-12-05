@@ -59,7 +59,7 @@ GEMGeometryBuilderFromDDD::build( const std::shared_ptr<GEMGeometry>& theGeometr
   LogDebug("GEMGeometryBuilderFromDDD") << "About to run through the GEM structure\n" 
 					<< " First logical part "
 					<< fv.logicalPart().name().name(); 
-  int i = 0;
+  int i = 1;
   bool doSuper = fv.firstChild();
   LogDebug("GEMGeometryBuilderFromDDD") << "doSuperChamber = " << doSuper;
   // loop over superchambers
@@ -99,7 +99,7 @@ GEMGeometryBuilderFromDDD::build( const std::shared_ptr<GEMGeometry>& theGeometr
         int rawid = gemNum.baseNumberToUnitNumber(mdddnum.geoHistoryToBaseNumber(fv.geoHistory()));
         GEMDetId detId = GEMDetId(rawid);
 
-	std::cout << "##" << k << "   DetId is " << detId << ". " << std::endl;
+	std::cout << "##" << k << "   DetId is " << detId << ". ";
 
 	GEMEtaPartition *etaPart = buildEtaPartition(fv, detId, i, k);
 	gemChamber->add(etaPart);
@@ -193,6 +193,7 @@ GEMGeometryBuilderFromDDD::buildSuperChamber( DDFilteredView& fv,
   //for (auto  sch: pDD->superChambers) { GEMDetId schId(sch->id()); }
   
   std::cout << "# " << i << ". dy = " << dy << "cm, dz = " << dz << "cm, dx1 = " << dx1 << "cm, dx2 = " << dx2 << "cm." << std::endl; 
+  std::cout << " " << std::endl;
   //std::cout << "# " << i << "   dy = " << dy << "cm, dz = " << dz << "cm, dx1 = " << dx1 << "cm, dx2 = " << dx2 << "cm, dz = " << dz << "." << std::endl;
 
   bool isOdd = detId.chamber()%2;
@@ -276,7 +277,8 @@ GEMGeometryBuilderFromDDD::buildEtaPartition( DDFilteredView& fv,
   iSetup.get<MuonGeometryRecord>().get(pDD);
   */
   //for (auto roll: pDD->etaPartitions()) { GEMDetId rId(roll->id()); }
-  std::cout << ".   The eta-partition " << k << ". be = " << be << "cm, te = " << te << "cm, ap = " << ap << "cm, ti = 0.4cm." << std::endl;   
+  std::cout << "be = " << be << "cm, te = " << te << "cm, ap = " << ap << "cm, ti = 0.4cm." << std::endl;
+  std::cout << " " << std::endl;   
   //std::cout << "## " << i << "   The eta-partition " << k << ". be = " << be << "cm, te = " << te << "cm, ap = " << ap << "cm, ti = 0.4cm." << std::endl;  
  
   std::vector<float> pars;
