@@ -1,7 +1,7 @@
 ======================== Opening output file
 GEMGeometryAnalyzer: Analyzer...
 start --------------------------------------------------------------------------------------------------------
- Geometry node for GEMGeom is  0x7f29d6c9a090
+ Geometry node for GEMGeom is  0x7fe9c6b8b090
  detTypes       	1728
  GeomDetUnit       	1728
  GeomDet           	2052
@@ -17,6 +17,7 @@ start --------------------------------------------------------------------------
 GEMGeometryAnalyzer: Begin iteration over geometry...
 iter --------------------------------------------------------------------------------------------------------
 GEMGeometryAnalyzerBegin GEMGeometry structure TEST
+ 
  Re -1 Ri 1 St 1 La 0 Ch 1 Ro 0 , center x: 183.25 cm, center y: 1.86096e-13 cm, center z: -567.63 cm.
  
  Re -1 Ri 1 St 1 La 1 Ch 1 Ro 0 , center x: 183.25 cm, center y: 1.86096e-13 cm, center z: -567.63 cm.
@@ -2608,5 +2609,4 @@ GEMGeometryAnalyzerBegin GEMGeometry structure TEST
  Re 1 Ri 1 St 2 La 2 Ch 18 Ro 6 , x: 182.495 cm, y: -48.8993 cm, z: 797.149 cm, 1stStrip: -25.3647 deg, lastStrip: -4.58225 deg, ap: 9.7625 cm , te: 36.4835 cm , be: 32.8984 cm.
  Re 1 Ri 1 St 2 La 2 Ch 18 Ro 7 , x: 160.206 cm, y: -42.9271 cm, z: 797.149 cm, 1stStrip: -25.3647 deg, lastStrip: -4.58225 deg, ap: 9.7625 cm , te: 32.2466 cm , be: 28.6615 cm.
  Re 1 Ri 1 St 2 La 2 Ch 18 Ro 8 , x: 141.327 cm, y: -37.8685 cm, z: 797.149 cm, 1stStrip: -25.3647 deg, lastStrip: -4.58225 deg, ap: 9.7625 cm , te: 28.6578 cm , be: 25.0727 cm.
- 
 -------------------------------------------------------------------------------------------------------- end

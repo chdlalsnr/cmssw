@@ -149,8 +149,8 @@ GEMGeometryAnalyzer::analyze( const edm::Event& /*iEvent*/, const edm::EventSetu
       LocalPoint  lCentre( 0., 0., 0. );
       GlobalPoint gCentre(bSurface.toGlobal(lCentre));
 
-      ofos << sch.id() << ", center x: " << gCentre.x() << " cm, center y: " <<  gCentre.y() << " cm, center z: " << gCentre.z() << " cm." << std::endl;
       ofos << " " << std::endl;
+      ofos << sch.id() << ", center x: " << gCentre.x() << " cm, center y: " <<  gCentre.y() << " cm, center z: " << gCentre.z() << " cm." << std::endl;
 
       for (auto ch : sch.chambers()){
 
@@ -160,6 +160,7 @@ GEMGeometryAnalyzer::analyze( const edm::Event& /*iEvent*/, const edm::EventSetu
         LocalPoint  lCentre( 0., 0., 0. );
         GlobalPoint gCentre(bSurface.toGlobal(lCentre));
 
+        ofos << " " << std::endl;
         ofos << ch->id() << ", center x: " << gCentre.x() << " cm, center y: " <<  gCentre.y() << " cm, center z: " << gCentre.z() << " cm." << std::endl; 
         ofos << " " << std::endl;
 
@@ -181,9 +182,8 @@ GEMGeometryAnalyzer::analyze( const edm::Event& /*iEvent*/, const edm::EventSetu
           GlobalPoint gBottom(bSurface.toGlobal(lBottom));
 
           //auto roll = ch.etaPartitions()[1];
-          ofos << roll->id() << ", x: "<< gCentre.x() << " cm, y: " << gCentre.y() << " cm, z: " << gCentre.z() << " cm, 1stStrip: " << roll->toGlobal(roll->centreOfStrip(1)).phi().degrees() << " deg, lastStrip: " << roll->toGlobal(roll->centreOfStrip(roll->nstrips())).phi().degrees() << " deg, half-apothem: " << height  << " cm , half-topEdge: " << topEdge << " cm , half-bottomEdge: " << bottomEdge << " cm." << std::endl;
+          ofos << roll->id() << ", x: "<< gCentre.x() << " cm, y: " << gCentre.y() << " cm, z: " << gCentre.z() << " cm, 1stStrip: " << roll->toGlobal(roll->centreOfStrip(1)).phi().degrees() << " deg, lastStrip: " << roll->toGlobal(roll->centreOfStrip(roll->nstrips())).phi().degrees() << " deg, ap: " << height  << " cm , te: " << topEdge << " cm , be: " << bottomEdge << " cm." << std::endl;
         }
-        ofos << " " << std::endl;
       }
     }
   //}
