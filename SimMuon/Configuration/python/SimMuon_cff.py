@@ -22,7 +22,7 @@ _run3_muonDigiTask = muonDigiTask.copy()
 _run3_muonDigiTask.add(muonGEMDigiTask)
 
 _phase2_muonDigiTask = _run3_muonDigiTask.copy()
-_phase2_muonDigiTask.add(muonME0DigiTask)
+#_phase2_muonDigiTask.add(muonME0DigiTask)
 
 from Configuration.Eras.Modifier_run2_GEM_2017_cff import run2_GEM_2017
 run2_GEM_2017.toReplaceWith( muonDigiTask, _run3_muonDigiTask )
