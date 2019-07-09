@@ -49,19 +49,20 @@ using namespace edm;
   public:
 	explicit GEMSimCollectionMerger( const ParameterSet& );
 	~GEMSimCollectionMerger();
+	//void produce( edm::Event& iEvent, edm::EventSetup const& iSetup) override;
 
   private:
 
 	virtual void produce( Event&, EventSetup const& ) override;
-    	virtual void beginJob() override;
-    	virtual void endJob() override;
+    	//virtual void beginJob() override;
+    	//virtual void endJob() override;
 
-    	virtual void beginRun(Run const& /* iR */, EventSetup const& /* iE */) override;
-    	virtual void endRun(Run const& /* iR */, EventSetup const& /* iE */) override;
-    	virtual void beginLuminosityBlock(LuminosityBlock const& /* iL */, EventSetup const& /* iE */) override;
-    	virtual void endLuminosityBlock(LuminosityBlock const& /* iL */, EventSetup const& /* iE */) override;
-    	virtual void respondToOpenInputFile(FileBlock const&) override;
-	virtual void respondToCloseInputFile(FileBlock const&) override;
+    	//virtual void beginRun(Run const& /* iR */, EventSetup const& /* iE */) override;
+    	//virtual void endRun(Run const& /* iR */, EventSetup const& /* iE */) override;
+    	//virtual void beginLuminosityBlock(LuminosityBlock const& /* iL */, EventSetup const& /* iE */) override;
+    	//virtual void endLuminosityBlock(LuminosityBlock const& /* iL */, EventSetup const& /* iE */) override;
+    	//virtual void respondToOpenInputFile(FileBlock const&) override;
+	//virtual void respondToCloseInputFile(FileBlock const&) override;
 
   // ========================== mermber data ==========================
     edm::ParameterSet pset;
@@ -101,14 +102,14 @@ void GEMSimCollectionMerger::produce() ( Event& iEvent, EventSetup const& iSetup
   iEvent.put( GEMSimHitCollection );*/
 }
 
-void GEMSimCollectionMerger::beginJob() {}
-void GEMSimCollectionMerger::endJob(){}
-void GEMSimCollectionMerger::beginRun(Run const& run, EventSetup const& iSetup){}
-void GEMSimCollectionMerger::endRun(Run const& run, EventSetup const& iSetup){}
-void GEMSimCollectionMerger::beginLuminosityBlock(LuminosityBlock const& lumi, EventSetup const& iSetup){}
-void GEMSimCollectionMerger::endLuminosityBlock(LuminosityBlock const& lumi, EventSetup const& iSetup){}
-void GEMSimCollectionMerger::respondToOpenInputFile(FileBlock const& block) {}
-void GEMSimCollectionMerger::respondToCloseInputFile(FileBlock const& block) {}
-
+/*void GEMSimCollectionMerger::beginJob()
+void GEMSimCollectionMerger::endJob()
+void GEMSimCollectionMerger::beginRun(Run const& run, EventSetup const& iSetup)
+void GEMSimCollectionMerger::endRun(Run const& run, EventSetup const& iSetup)
+void GEMSimCollectionMerger::beginLuminosityBlock(LuminosityBlock const& lumi, EventSetup const& iSetup)
+void GEMSimCollectionMerger::endLuminosityBlock(LuminosityBlock const& lumi, EventSetup const& iSetup)
+void GEMSimCollectionMerger::respondToOpenInputFile(FileBlock const& block) 
+void GEMSimCollectionMerger::respondToCloseInputFile(FileBlock const& block) 
+*/
 // define this as a plugin
 DEFINE_FWK_MODULE(GEMSimCollectionMerger);
