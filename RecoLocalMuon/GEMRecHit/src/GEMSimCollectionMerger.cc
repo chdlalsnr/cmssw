@@ -1,6 +1,9 @@
 #include "FWCore/Framework/interface/EDProducer.h"
+#include "FWCore/Framework/interface/MakerMacros.h"
+#include "FWCore/Utilities/interface/Exception.h"
 #include "FWCore/Framework/interface/Event.h"
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
+#include "FWCore/Utilities/interface/StreamID.h"
 #include "FWCore/Framework/interface/ConsumesCollector.h"
 #include "FWCore/ServiceRegistry/interface/Service.h"
 #include "FWCore/Framework/interface/OutputModule.h"
@@ -10,17 +13,14 @@
 #include "FWCore/Framework/interface/ESHandle.h"
 #include "FWCore/Framework/interface/Run.h"
 #include "FWCore/Framework/interface/EventPrincipal.h"
+#include "FWCore/Framework/interface/Frameworkfwd.h"
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
-#include "FWCore/Framework/interface/ModuleContextSentry.h"
-#include "FWCore/ServiceRegistry/interface/InternalContext.h"
-#include "FWCore/ServiceRegistry/interface/ModuleCallingContext.h"
-#include "FWCore/ServiceRegistry/interface/ParentContext.h"
 
-#include "DataFormats/Provenance/interface/ProductID.h"
 #include "DataFormats/Common/interface/Handle.h"
 #include "DataFormats/MuonDetId/interface/GEMDetId.h"
 #include "DataFormats/HepMCCandidate/interface/GenParticle.h"
 #include "DataFormats/Common/interface/DetSetVector.h"
+#include "DataFormats/MuonDetId/interface/MuonSubdetId.h"
 
 #include "CommonTools/UtilAlgos/interface/TFileService.h"
 #include "Geometry/GEMGeometry/interface/GEMGeometry.h"
@@ -31,14 +31,13 @@
 #include "SimDataFormats/TrackingHit/interface/PSimHitContainer.h"
 #include "SimDataFormats/TrackerDigiSimLink/interface/StripDigiSimLink.h"
 #include "SimDataFormats/GEMDigiSimLink/interface/GEMDigiSimLink.h"
-#include "SimDataFormats/PileupSummaryInfo/interface/PileupSummaryInfo.h"
-#include "SimDataFormats/CrossingFrame/interface/CrossingFramePlaybackInfoNew.h"
 
 #include <iostream>
-#include <functional>
+#include <fstream>
 #include <memory>
 #include <vector>
 #include <map>
+#include <string>
 
 using namespace std;
 using namespace edm;
@@ -49,67 +48,74 @@ using namespace edm;
   public:
 	explicit GEMSimCollectionMerger( const ParameterSet& );
 	~GEMSimCollectionMerger();
-	//void produce( edm::Event& iEvent, edm::EventSetup const& iSetup) override;
 
   private:
 
 	virtual void produce( Event&, EventSetup const& ) override;
-    	//virtual void beginJob() override;
-    	//virtual void endJob() override;
-
-    	//virtual void beginRun(Run const& /* iR */, EventSetup const& /* iE */) override;
-    	//virtual void endRun(Run const& /* iR */, EventSetup const& /* iE */) override;
-    	//virtual void beginLuminosityBlock(LuminosityBlock const& /* iL */, EventSetup const& /* iE */) override;
-    	//virtual void endLuminosityBlock(LuminosityBlock const& /* iL */, EventSetup const& /* iE */) override;
-    	//virtual void respondToOpenInputFile(FileBlock const&) override;
-	//virtual void respondToCloseInputFile(FileBlock const&) override;
 
   // ========================== mermber data ==========================
     edm::ParameterSet pset;
     edm::Service<TFileService> fs;
     edm::EDGetToken GEMSimHitsToken;
     edm::EDGetToken ME0SimHitsToken;
-    std::vector<PSimHit>* PSimHitVect_; 
+    std::vector<PSimHit>* PSimHitVect_;
+    //std::ofstream ofos;
   // ==================================================================
 };
 
 // Constructor
 GEMSimCollectionMerger::GEMSimCollectionMerger( const ParameterSet& ps ) { 
 
+  produces< std::vector<PSimHit> >("CombinedGEMSimHits");
   GEMSimHitsToken = consumes< std::vector<PSimHit> >( ps.getParameter<edm::InputTag>("GEMSimHitInputLabel") );
   ME0SimHitsToken = consumes< std::vector<PSimHit> >( ps.getParameter<edm::InputTag>("ME0SimHitInputLabel") );
-  PSimHitVect_ = new std::vector<PSimHit>;
 
-  //produces<std::vector<PSimHit>>();
+  //std::string mix_(ps.getParameter<std::string>("GEMSimHits", "ME0SimHits"));
+  //std::string collection_(ps.getParameter<std::string>("inputCollection"));
+  //cf_token = consumes<CrossingFrame<PSimHit> >(edm::InputTag(mix_));
+
+  //ofos.open("testGEMSimHit.out");
+  //ofos << "============================= Start Record SimHit DetId =============================");
 }
 
 // Destructor
 GEMSimCollectionMerger::~GEMSimCollectionMerger() {
 
-  if ( PSimHitVect_ ) delete PSimHitVect_;
+  //ofos << "============================== End Record SimHit DetId ==============================");
+  //ofos.close();
 }
 
-void GEMSimCollectionMerger::produce() ( Event& iEvent, EventSetup const& iSetup ) {
+void GEMSimCollectionMerger::produce( Event& iEvent, EventSetup const& iSetup ) {
 
-  edm::Handle< std::vector<PSimHit> > GEMSimHitsHandle;
-  edm::Handle< std::vector<PSimHit> > ME0SimHitsHandle;
-  iEvent.getByToken(GEMSimHitsToken, GEMSimHitsHandle);
-  iEvent.getByToken(ME0SimHitsToken, ME0SimHitsHandle);
+  edm::Handle< std::vector<PSimHit> > GEMSimHits;
+  edm::Handle< std::vector<PSimHit> > ME0SimHits;
+  iEvent.getByToken(GEMSimHitsToken, GEMSimHits);
+  iEvent.getByToken(ME0SimHitsToken, ME0SimHits);
 
-  if ( GEMSimHitHandle.isValid() && ME0SimHitHandle.isValid() ) std::cout << "working" << std::endl;
+  /*edm::Handle< CrossingFrame<PSimHit> > cf;
+  iEvent.getByToken (cf_token, cf);
+  MixCollection<PSimHit> hits{cf.product()};
+  for (const auto& hit: hits) {
 
-  /*std::auto_ptr< std::vector<PSimHit> > GEMSimHitCollection( new GEMSimHitCollection );
-  iEvent.put( GEMSimHitCollection );*/
+    DetId detId = hit.detUnitId();
+    ofos << "SimHit DetId : " << detId << endl;
+  }*/
+
+  // ===================================================================================
+  /*const std::vector<PSimHit>& gem_simhits = *CombinedGEMSimHits.product();
+  int gh_station = 0;
+  int ng = 0;
+  for (auto& gmsh : gem_simhits) { 
+    GEMDetId gem_detId = gmsh.detUnitId();
+    gh_station = gem_detId.layer();
+    std::cout << "SimHit station : " << gh_station << std::endl; ng++;
+  }std::cout << "nSimHit of GEM : " << ng << std::endl;
+
+  ofos << "( " << gem_detId.region() << ", " << gem_detId.ring() << ", " << gem_detId.station() << ", " << gem_detId.layer() << ", " << gem_detId.chamber() << ", " << gem_detId.roll() << " )" << endl;
+  // ===================================================================================*/
+  
+  iEvent.put( std::make_unique< CombinedGEMSimHits > (*GEMSimHits, *ME0SimHits) );
 }
 
-/*void GEMSimCollectionMerger::beginJob()
-void GEMSimCollectionMerger::endJob()
-void GEMSimCollectionMerger::beginRun(Run const& run, EventSetup const& iSetup)
-void GEMSimCollectionMerger::endRun(Run const& run, EventSetup const& iSetup)
-void GEMSimCollectionMerger::beginLuminosityBlock(LuminosityBlock const& lumi, EventSetup const& iSetup)
-void GEMSimCollectionMerger::endLuminosityBlock(LuminosityBlock const& lumi, EventSetup const& iSetup)
-void GEMSimCollectionMerger::respondToOpenInputFile(FileBlock const& block) 
-void GEMSimCollectionMerger::respondToCloseInputFile(FileBlock const& block) 
-*/
 // define this as a plugin
 DEFINE_FWK_MODULE(GEMSimCollectionMerger);
