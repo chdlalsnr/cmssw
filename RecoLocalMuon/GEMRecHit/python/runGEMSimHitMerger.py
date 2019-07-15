@@ -1,4 +1,4 @@
-"""import FWCore.ParameterSet.Config as cms
+import FWCore.ParameterSet.Config as cms
 import os
 
 from Configuration.StandardSequences.Eras import eras
@@ -24,7 +24,7 @@ process.source = cms.Source ("PoolSource",
 	skipBadFiles = cms.untracked.bool(True)
 )
 
-#process.TFileService = cms.Service("TFileService", fileName = cms.string("out.root"))
+process.TFileService = cms.Service("TFileService", fileName = cms.string("out.root"))
 
 #GEMSimHitInputLabel = "MuonGEMHits"
 #ME0SimHitInputLabel = "MuonME0Hits"
@@ -35,4 +35,4 @@ process.test = cms.EDProducer("GEMSimCollectionMerger",
 )
 
 process.p = cms.Path(process.test)
-process.schedule = cms.Schedule (process.p)"""
+process.schedule = cms.Schedule (process.p)

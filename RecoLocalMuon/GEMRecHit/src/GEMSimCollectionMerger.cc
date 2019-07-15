@@ -114,7 +114,8 @@ void GEMSimCollectionMerger::produce( Event& iEvent, EventSetup const& iSetup ) 
   ofos << "( " << gem_detId.region() << ", " << gem_detId.ring() << ", " << gem_detId.station() << ", " << gem_detId.layer() << ", " << gem_detId.chamber() << ", " << gem_detId.roll() << " )" << endl;
   // ===================================================================================*/
   
-  iEvent.put( std::make_unique< CombinedGEMSimHits > (*GEMSimHits, *ME0SimHits) );
+  iEvent.put( std::make_unique< std::vector<PSimHit> > (*GEMSimHits) );
+  iEvent.put( std::make_unique< std::vector<PSimHit> > (*ME0SimHits) );
 }
 
 // define this as a plugin
