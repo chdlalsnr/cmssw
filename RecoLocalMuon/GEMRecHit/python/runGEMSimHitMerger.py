@@ -24,8 +24,14 @@ process.source = cms.Source ("PoolSource",
 	skipBadFiles = cms.untracked.bool(True)
 )
 
-process.TFileService = cms.Service("TFileService", fileName = cms.string("out.root"))
+process.out = cms.OutputModule("PoolOutputModule",
+	fileName = cms.untracked.string('outputFile.root'),
+	outputCommands = cms.untracked.vstring('drop *',
+	  "keep *_g4SimHits_*_*",
+	  "keep *_*_CombinedGEMSimHits_*")
+)
 
+#process.TFileService = cms.Service("TFileService", fileName = cms.string("out.root"))
 #GEMSimHitInputLabel = "MuonGEMHits"
 #ME0SimHitInputLabel = "MuonME0Hits"
 
@@ -35,4 +41,5 @@ process.test = cms.EDProducer("GEMSimCollectionMerger",
 )
 
 process.p = cms.Path(process.test)
-process.schedule = cms.Schedule (process.p)
+process.e = cms.EndPath(process.out)
+#process.schedule = cms.Schedule (process.p)

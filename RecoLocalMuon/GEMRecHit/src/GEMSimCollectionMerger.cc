@@ -2,15 +2,15 @@
 #include "FWCore/Framework/interface/MakerMacros.h"
 #include "FWCore/Utilities/interface/Exception.h"
 #include "FWCore/Framework/interface/Event.h"
+#include "FWCore/Framework/interface/ESHandle.h"
+#include "FWCore/Framework/interface/MakerMacros.h"
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 #include "FWCore/Utilities/interface/StreamID.h"
 #include "FWCore/Framework/interface/ConsumesCollector.h"
 #include "FWCore/ServiceRegistry/interface/Service.h"
 #include "FWCore/Framework/interface/OutputModule.h"
-#include "FWCore/Framework/interface/MakerMacros.h"
 #include "FWCore/Utilities/interface/EDGetToken.h"
 #include "FWCore/Utilities/interface/InputTag.h"
-#include "FWCore/Framework/interface/ESHandle.h"
 #include "FWCore/Framework/interface/Run.h"
 #include "FWCore/Framework/interface/EventPrincipal.h"
 #include "FWCore/Framework/interface/Frameworkfwd.h"
@@ -50,7 +50,6 @@ using namespace edm;
 	~GEMSimCollectionMerger();
 
   private:
-
 	virtual void produce( Event&, EventSetup const& ) override;
 
   // ========================== mermber data ==========================
@@ -69,21 +68,10 @@ GEMSimCollectionMerger::GEMSimCollectionMerger( const ParameterSet& ps ) {
   produces< std::vector<PSimHit> >("CombinedGEMSimHits");
   GEMSimHitsToken = consumes< std::vector<PSimHit> >( ps.getParameter<edm::InputTag>("GEMSimHitInputLabel") );
   ME0SimHitsToken = consumes< std::vector<PSimHit> >( ps.getParameter<edm::InputTag>("ME0SimHitInputLabel") );
-
-  //std::string mix_(ps.getParameter<std::string>("GEMSimHits", "ME0SimHits"));
-  //std::string collection_(ps.getParameter<std::string>("inputCollection"));
-  //cf_token = consumes<CrossingFrame<PSimHit> >(edm::InputTag(mix_));
-
-  //ofos.open("testGEMSimHit.out");
-  //ofos << "============================= Start Record SimHit DetId =============================");
 }
 
 // Destructor
-GEMSimCollectionMerger::~GEMSimCollectionMerger() {
-
-  //ofos << "============================== End Record SimHit DetId ==============================");
-  //ofos.close();
-}
+GEMSimCollectionMerger::~GEMSimCollectionMerger() = default;
 
 void GEMSimCollectionMerger::produce( Event& iEvent, EventSetup const& iSetup ) {
 
@@ -92,30 +80,21 @@ void GEMSimCollectionMerger::produce( Event& iEvent, EventSetup const& iSetup ) 
   iEvent.getByToken(GEMSimHitsToken, GEMSimHits);
   iEvent.getByToken(ME0SimHitsToken, ME0SimHits);
 
-  /*edm::Handle< CrossingFrame<PSimHit> > cf;
-  iEvent.getByToken (cf_token, cf);
-  MixCollection<PSimHit> hits{cf.product()};
-  for (const auto& hit: hits) {
-
-    DetId detId = hit.detUnitId();
-    ofos << "SimHit DetId : " << detId << endl;
-  }*/
-
   // ===================================================================================
   /*const std::vector<PSimHit>& gem_simhits = *CombinedGEMSimHits.product();
   int gh_station = 0;
   int ng = 0;
   for (auto& gmsh : gem_simhits) { 
     GEMDetId gem_detId = gmsh.detUnitId();
-    gh_station = gem_detId.layer();
+    gh_station = gem_detId.stion();
     std::cout << "SimHit station : " << gh_station << std::endl; ng++;
   }std::cout << "nSimHit of GEM : " << ng << std::endl;
 
   ofos << "( " << gem_detId.region() << ", " << gem_detId.ring() << ", " << gem_detId.station() << ", " << gem_detId.layer() << ", " << gem_detId.chamber() << ", " << gem_detId.roll() << " )" << endl;
-  // ===================================================================================*/
-  
-  iEvent.put( std::make_unique< std::vector<PSimHit> > (*GEMSimHits) );
-  iEvent.put( std::make_unique< std::vector<PSimHit> > (*ME0SimHits) );
+  // ===================================================================================
+*/  
+  iEvent.put( std::move(std::make_unique<std::vector<PSimHit>>(*GEMSimHits)),"CombinedGEMSimHits" );
+  iEvent.put( std::move(std::make_unique<std::vector<PSimHit>>(*ME0SimHits)),"CombinedGEMSimHits" );
 }
 
 // define this as a plugin

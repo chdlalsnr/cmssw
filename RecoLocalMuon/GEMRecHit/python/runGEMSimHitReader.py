@@ -20,18 +20,17 @@ process.options = cms.untracked.PSet(allowUnscheduled = cms.untracked.bool(True)
 run2 = False
 
 process.source = cms.Source ("PoolSource",
-	fileNames = cms.untracked.vstring('file:/cms/ldap_home/chdlalsnr/CMSSW_11_0_0_pre2/src/22411/step1.root'),
+	fileNames = cms.untracked.vstring('file:/cms/ldap_home/chdlalsnr/CMSSW_11_0_0_pre2/src/RecoLocalMuon/GEMRecHit/python/outputFile.root'),
 	skipBadFiles = cms.untracked.bool(True)
 )
 
 #process.TFileService = cms.Service("TFileService", fileName = cms.string("out.root"))
-
 #GEMSimHitInputLabel = "MuonGEMHits"
 #ME0SimHitInputLabel = "MuonME0Hits"
 
 process.test = cms.EDAnalyzer("GEMSimCollectionReader",
-	GEMSimHitInputLabel = cms.InputTag("g4SimHits","MuonGEMHits","SIM"),
-	ME0SimHitInputLabel = cms.InputTag("g4SimHits","MuonME0Hits","SIM")
+	CombinedGEMSimHitInputLabel = cms.InputTag("test","CombinedGEMSimHits","GEMSimCollectionMerger"),
+	#ME0SimHitInputLabel = cms.InputTag("g4SimHits","MuonME0Hits","SIM")
 )
 
 process.p = cms.Path(process.test)
