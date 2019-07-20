@@ -15,7 +15,7 @@ from Configuration.AlCa.GlobalTag import GlobalTag
 #from CondCore.ESSources.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:phase2_realistic', '')
 
-process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(-1)) # <===== problem?
+process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(-1))
 process.options = cms.untracked.PSet(allowUnscheduled = cms.untracked.bool(True))
 run2 = False
 
@@ -25,21 +25,21 @@ process.source = cms.Source ("PoolSource",
 )
 
 process.out = cms.OutputModule("PoolOutputModule",
-	fileName = cms.untracked.string('outputFile.root'),
-	outputCommands = cms.untracked.vstring('drop *',
-	  "keep *_g4SimHits_*_*",
-	  "keep *_*_CombinedGEMSimHits_*")
+	fileName = cms.untracked.string('step1.root'),
+	outputCommands = cms.untracked.vstring("keep *_*_*_*")#'drop *',
+	  #"keep *_g4SimHits_*_*",
+	  #"keep *_*_CombinedGEMSimHits_*")
 )
 
-#process.TFileService = cms.Service("TFileService", fileName = cms.string("out.root"))
+#process.TFileService = cms.Service("TFileService", fileName = cms.string("outputFile.root"))
 #GEMSimHitInputLabel = "MuonGEMHits"
 #ME0SimHitInputLabel = "MuonME0Hits"
 
-process.test = cms.EDProducer("GEMSimCollectionMerger",
+process.g4SimHits = cms.EDProducer("GEMSimCollectionMerger",
 	GEMSimHitInputLabel = cms.InputTag("g4SimHits","MuonGEMHits","SIM"),
 	ME0SimHitInputLabel = cms.InputTag("g4SimHits","MuonME0Hits","SIM")
 )
 
-process.p = cms.Path(process.test)
+process.p = cms.Path(process.g4SimHits)
 process.e = cms.EndPath(process.out)
 #process.schedule = cms.Schedule (process.p)

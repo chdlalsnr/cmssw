@@ -57,15 +57,14 @@ using namespace edm;
     edm::Service<TFileService> fs;
     edm::EDGetToken GEMSimHitsToken;
     edm::EDGetToken ME0SimHitsToken;
-    std::vector<PSimHit>* PSimHitVect_;
-    //std::ofstream ofos;
+    std::vector<GEMDetId> PSimHitVect_;
   // ==================================================================
 };
 
 // Constructor
 GEMSimCollectionMerger::GEMSimCollectionMerger( const ParameterSet& ps ) { 
 
-  produces< std::vector<PSimHit> >("CombinedGEMSimHits");
+  produces< std::vector<PSimHit> >("CombinedMuonGEMHits");
   GEMSimHitsToken = consumes< std::vector<PSimHit> >( ps.getParameter<edm::InputTag>("GEMSimHitInputLabel") );
   ME0SimHitsToken = consumes< std::vector<PSimHit> >( ps.getParameter<edm::InputTag>("ME0SimHitInputLabel") );
 }
@@ -81,20 +80,39 @@ void GEMSimCollectionMerger::produce( Event& iEvent, EventSetup const& iSetup ) 
   iEvent.getByToken(ME0SimHitsToken, ME0SimHits);
 
   // ===================================================================================
-  /*const std::vector<PSimHit>& gem_simhits = *CombinedGEMSimHits.product();
-  int gh_station = 0;
-  int ng = 0;
-  for (auto& gmsh : gem_simhits) { 
-    GEMDetId gem_detId = gmsh.detUnitId();
-    gh_station = gem_detId.stion();
-    std::cout << "SimHit station : " << gh_station << std::endl; ng++;
-  }std::cout << "nSimHit of GEM : " << ng << std::endl;
 
-  ofos << "( " << gem_detId.region() << ", " << gem_detId.ring() << ", " << gem_detId.station() << ", " << gem_detId.layer() << ", " << gem_detId.chamber() << ", " << gem_detId.roll() << " )" << endl;
+  const std::vector<PSimHit>& gem_simhits = *GEMSimHits.product();
+  const std::vector<PSimHit>& me0_simhits = *ME0SimHits.product();
+
+  std::vector<PSimHit> gem_vect;
+  for (int i = 0; i < int(gem_simhits.size()); i++) { gem_vect.push_back(gem_simhits.at(i)); }
+  for (int i = 0; i < int(me0_simhits.size()); i++) { gem_vect.push_back(me0_simhits.at(i)); }
+
+  /*if ( (GEMSimHits.isValid()) && (ME0SimHits.isValid()) ) {
+
+    int g = 0;
+    for (auto& gmsh : gem_simhits) {
+      GEMDetId gem_detId = gmsh.detUnitId();
+      PSimHitVect_.push_back(gem_detId);
+      int gm_station = gem_detId.station();
+      std::cout << PSimHitVect_.at(g) << std::endl; g++;
+    }std::cout << "nSimHit of GEM : " << g << std::endl;
+
+    int m = 0;
+    for (auto& m0sh : me0_simhits) {
+      GEMDetId me0_detId = m0sh.detUnitId();
+      PSimHitVect_.push_back(me0_detId);
+      std::cout << PSimHitVect_.at(g+m) << std::endl; m++;
+    }std::cout << "nSimHit of ME0 : " << m << std::endl;
+  }
+
+  else { std::cout << "NOT VALID GEM SIMHIT INPUT!!!" << std::endl; }*/
+
   // ===================================================================================
-*/  
-  iEvent.put( std::move(std::make_unique<std::vector<PSimHit>>(*GEMSimHits)),"CombinedGEMSimHits" );
-  iEvent.put( std::move(std::make_unique<std::vector<PSimHit>>(*ME0SimHits)),"CombinedGEMSimHits" );
+  
+  iEvent.put( std::move(std::make_unique<std::vector<PSimHit>>(gem_vect)),"CombinedMuonGEMHits" );
+  //iEvent.put( std::move(std::make_unique<std::vector<PSimHit>>(*ME0SimHits)),"CombinedGEMSimHits" );
+  //iEvent.put( std::move(std::make_unique<std::vector<PSimHit>>(*ME0SimHits)),"MuonGEMHits" );
 }
 
 // define this as a plugin

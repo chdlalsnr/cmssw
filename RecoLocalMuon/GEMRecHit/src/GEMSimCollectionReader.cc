@@ -1,5 +1,4 @@
 #include "FWCore/Framework/interface/EDAnalyzer.h"
-#include "FWCore/Framework/interface/EDProducer.h"
 #include "FWCore/Framework/interface/Event.h"
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 #include "FWCore/ServiceRegistry/interface/Service.h"
@@ -48,9 +47,8 @@ using namespace edm;
   // ========================== mermber data ==========================
     edm::ParameterSet pset;
     edm::Service<TFileService> fs;
-    //edm::EDGetToken GEMSimHitsToken;
-    //edm::EDGetToken ME0SimHitsToken;
     edm::EDGetToken CombinedGEMSimHitsToken;
+    std::vector<GEMDetId> PSimHitVect_;
     int nME0SimHits, nGEMSimHits;
   // ==================================================================
 };
@@ -58,58 +56,34 @@ using namespace edm;
 // Constructor
 GEMSimCollectionReader::GEMSimCollectionReader( const ParameterSet& ps ) { 
 
-  std::cout << "==================== Construction of GEMSimHitCollectionReader ====================" << std::endl;
-
   CombinedGEMSimHitsToken = consumes< std::vector<PSimHit> >( ps.getParameter<edm::InputTag>("CombinedGEMSimHitInputLabel") );
-  // GEMSimHitInputLabel = "CombinedGEMSimHits"
-  //GEMSimHitsToken = consumes< std::vector<PSimHit> >( ps.getParameter<edm::InputTag>("GEMSimHitInputLabel") );
-  //ME0SimHitsToken = consumes< std::vector<PSimHit> >( ps.getParameter<edm::InputTag>("ME0SimHitInputLabel") );
 } 
 
 // Destructor
-GEMSimCollectionReader::~GEMSimCollectionReader() {
-
-  std::cout << "===================== Destruction of GEMSimHitCollectionReader ====================" << std::endl;
-}
+GEMSimCollectionReader::~GEMSimCollectionReader() = default;
 
 void GEMSimCollectionReader::analyze( const Event& iEvent, const EventSetup& iSetup ) {
 
-  //edm::Handle< std::vector<PSimHit> > GEMSimHits;
-  //edm::Handle< std::vector<PSimHit> > ME0SimHits;
-  //iEvent.getByToken(GEMSimHitsToken, GEMSimHits);
-  //iEvent.getByToken(ME0SimHitsToken, ME0SimHits);
-
   edm::Handle< std::vector<PSimHit> > CombinedGEMSimHits;
   iEvent.getByToken(CombinedGEMSimHitsToken, CombinedGEMSimHits);
-  
-  if (CombinedGEMSimHits.isValid()) {
+  const std::vector<PSimHit>& gem_simhits = *CombinedGEMSimHits.product();
 
-    const std::vector<PSimHit>& gem_simhits = *CombinedGEMSimHits.product();
-    int gm_station = 0;
+  // ===================================================================================
 
-    int g = 0;
-    for (auto& gmsh : gem_simhits) { 
-      GEMDetId gem_detId = gmsh.detUnitId();
-      gm_station = gem_detId.station();
-      std::cout << gm_station << std::endl; g++;
-     }std::cout << "nSimHit of GEM : " << g << std::endl;
+  if (CombinedGEMSimHits.product()) {
+
+  int g = 0;
+  for (auto& gmsh : gem_simhits) {
+    GEMDetId gem_detId = gmsh.detUnitId();
+    PSimHitVect_.push_back(gem_detId);
+    int gm_station = gem_detId.station();
+    std::cout << PSimHitVect_.at(g) << std::endl; g++;
+    }std::cout << "nSimHit of GEM : " << g << std::endl;
+
   }
   else { std::cout << "NOT VALID GEM SIMHIT INPUT!!!" << std::endl; }
 
-  /*if (ME0SimHits.isValid()) {
-
-    const std::vector<PSimHit>& me0_simhits = *ME0SimHits.product();
-    int m0_layer = 0;
-
-    int m = 0;
-    for (auto& m0sh : me0_simhits) {
-      GEMDetId me0_detId = m0sh.detUnitId();
-      m0_layer = me0_detId.layer();
-      std::cout << m0_layer << std::endl; m++;
-    }std::cout << "nSimHit of ME0 : " << m << std::endl;
-  }
-  else { std::cout << "NOT VALID ME0 SIMHIT INPUT!!!" << std::endl; }
-*/
+  // ===================================================================================
 }
 
 // define this as a plugin
