@@ -10,8 +10,8 @@ gemDigiCommonParameters = cms.PSet(
     bxwidth = cms.int32(25),
     minBunch = cms.int32(-5), ## in terms of 25 ns
     maxBunch = cms.int32(3),
-    mixLabel = cms.string('mix'),	# added by A.Sharma
-    inputCollection = cms.string('g4SimHitsMuonGEMHits'),
+    mixLabel = cms.string('mix'),
+    inputCollection = cms.string('g4SimHitsCombinedMuonGEMHits'),
     digiModelString = cms.string('Simple'),
     digitizeOnlyMuons = cms.bool(False),
     doBkgNoise = cms.bool(False), #False == No background simulation
