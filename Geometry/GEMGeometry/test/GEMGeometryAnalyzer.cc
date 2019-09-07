@@ -26,6 +26,8 @@
 #include <iomanip>
 #include <set>
 
+#include <math.h>
+
 class GEMGeometryAnalyzer : public edm::one::EDAnalyzer<> {
 public:
   GEMGeometryAnalyzer(const edm::ParameterSet& pset);
@@ -36,6 +38,18 @@ public:
   void analyze(edm::Event const& iEvent, edm::EventSetup const&) override;
   void endJob() override {}
 
+  static bool sortCh(const GEMSuperChamber &a, const GEMSuperChamber &b){
+    if (a.id().region() == b.id().region()){
+      if (a.id().station() == b.id().station()){
+        if (a.id().superChamberId() == b.id().superChamberId()){
+          if (a.id().chamber() == b.id().chamber()){
+            return a.id().layer() < b.id().layer();
+          }else{ return a.id().chamber() < b.id().chamber();}
+        }else{ return a.id().superChamberId() < b.id().superChamberId();}
+      }else{ return a.id().station() < b.id().station();}
+    }else{ return a.id().region() < b.id().region();}
+  };
+
 private:
   const std::string& myName() { return myName_; }
 
@@ -43,6 +57,7 @@ private:
   const std::string dashedLine_;
   const std::string myName_;
   std::ofstream ofos;
+  std::vector<GEMSuperChamber> gemChambers_;
 };
 
 using namespace std;
@@ -58,6 +73,7 @@ GEMGeometryAnalyzer::~GEMGeometryAnalyzer() {
 }
 
 void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::EventSetup& iSetup) {
+
   edm::ESHandle<GEMGeometry> pDD;
   iSetup.get<MuonGeometryRecord>().get(pDD);
 
@@ -102,16 +118,16 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
   // checking uniqueness of chamber detIds
   bool flagNonUniqueChID = false;
   bool flagNonUniqueChRawID = false;
-  for (auto ch1 : pDD->chambers()) {
-    for (auto ch2 : pDD->chambers()) {
-      if (ch1 != ch2) {
-        if (ch1->id() == ch2->id())
-          flagNonUniqueChID = true;
-        if (ch1->id().rawId() == ch2->id().rawId())
-          flagNonUniqueChRawID = true;
+  for (auto sch1 : pDD->superChambers()) {
+    gemChambers_.push_back(*sch1);
+    for (auto sch2 : pDD->superChambers()) {
+      if (sch1 != sch2) {
+        if (sch1->id() == sch2->id()) flagNonUniqueChID = true;
+        if (sch1->id().rawId() == sch2->id().rawId()) flagNonUniqueChRawID = true;
       }
     }
   }
+  sort(gemChambers_.begin(), gemChambers_.end(), sortCh);
   if (flagNonUniqueChID or flagNonUniqueChRawID)
     ofos << " -- WARNING: non unique chamber Ids!!!" << endl;
 
@@ -121,133 +137,120 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
   //----------------------- Global GEMGeometry TEST -------------------------------------------------------
   ofos << myName() << "Begin GEMGeometry structure TEST" << endl;
 
-  for (auto region : pDD->regions()) {
-    ofos << "  GEMRegion " << region->region() << " has " << region->nStations() << " stations." << endl;
-    for (auto station : region->stations()) {
-      ofos << "    GEMStation " << station->getName() << " has " << station->nRings() << " rings." << endl;
-      for (auto ring : station->rings()) {
-        ofos << "      GEMRing " << ring->region() << " " << ring->station() << " " << ring->ring() << " has "
-             << ring->nSuperChambers() << " super chambers." << endl;
-        int i = 1;
-        for (auto sch : ring->superChambers()) {
-          GEMDetId schId(sch->id());
-          ofos << "        GEMSuperChamber " << i << ", GEMDetId = " << schId.rawId() << ", " << schId << " has "
-               << sch->nChambers() << " chambers." << endl;
-          // checking the dimensions of each partition & chamber
-          int j = 1;
-          for (auto ch : sch->chambers()) {
-            GEMDetId chId(ch->id());
-            int nRolls(ch->nEtaPartitions());
-            ofos << "          GEMChamber " << j << ", GEMDetId = " << chId.rawId() << ", " << chId << " has " << nRolls
-                 << " eta partitions." << endl;
+  for (auto sch : gemChambers_) {
 
-            int k = 1;
-            auto& rolls(ch->etaPartitions());
+    const BoundPlane& bSurface(sch.surface());
+    LocalPoint lCentre(0.,0.,0.);
+    GlobalPoint gCentre(bSurface.toGlobal(lCentre));
 
-            /*
-	     * possible checklist for an eta partition:
-	     *   base_bottom, base_top, height, strips, pads
-	     *   cx, cy, cz, ceta, cphi
-	     *   tx, ty, tz, teta, tphi
-	     *   bx, by, bz, beta, bphi
-	     *   pitch center, pitch bottom, pitch top
-	     *   deta, dphi
-	     *   gap thickness
-	     *   sum of all dx + gap = chamber height
-	     */
+    ofos << " " << std::endl;
+    ofos << sch.id() << ", center x: " << gCentre.x() << " cm, center y: " <<  gCentre.y() << " cm, center z: " << gCentre.z() << " cm." << std::endl;
 
-            for (auto roll : rolls) {
-              GEMDetId rId(roll->id());
-              ofos << "            GEMEtaPartition " << k << ", GEMDetId = " << rId.rawId() << ", " << rId << endl;
+    // checking the dimensions of each partition & chamber
+    for (auto ch : sch.chambers()) {
 
-              const BoundPlane& bSurface(roll->surface());
-              const StripTopology* topology(&(roll->specificTopology()));
+      int nRolls(ch->nEtaPartitions());
+      const BoundPlane& bSurface(ch->surface());
+      LocalPoint lCentre(0.,0.,0.);
+      GlobalPoint gCentre(bSurface.toGlobal(lCentre));
 
-              // base_bottom, base_top, height, strips, pads (all half length)
-              auto& parameters(roll->specs()->parameters());
-              float bottomEdge(parameters[0]);
-              float topEdge(parameters[1]);
-              float height(parameters[2]);
-              float nStrips(parameters[3]);
-              float nPads(parameters[4]);
+      ofos << " " << std::endl;
+      ofos << ch->id() << ", center x: " << gCentre.x() << " cm, center y: " <<  gCentre.y() << " cm, center z: " << gCentre.z() << " cm." << std::endl; 
+      ofos << " " << std::endl;
 
-              LocalPoint lCentre(0., 0., 0.);
-              GlobalPoint gCentre(bSurface.toGlobal(lCentre));
+      /*
+      * possible checklist for an eta partition:
+      *   base_bottom, base_top, height, strips, pads
+      *   cx, cy, cz, ceta, cphi
+      *   tx, ty, tz, teta, tphi
+      *   bx, by, bz, beta, bphi
+      *   pitch center, pitch bottom, pitch top
+      *   deta, dphi
+      *   gap thickness
+      *   sum of all dx + gap = chamber height
+      */
 
-              LocalPoint lTop(0., height, 0.);
-              GlobalPoint gTop(bSurface.toGlobal(lTop));
+      for (auto roll : ch->etaPartitions()) {
 
-              LocalPoint lBottom(0., -height, 0.);
-              GlobalPoint gBottom(bSurface.toGlobal(lBottom));
+        GEMDetId rId(roll->id());
+        const BoundPlane& bSurface(roll->surface());
+        const StripTopology* topology(&(roll->specificTopology()));
 
-              //   gx, gy, gz, geta, gphi (center)
-              double cx(gCentre.x());
-              double cy(gCentre.y());
-              double cz(gCentre.z());
-              double ceta(gCentre.eta());
-              int cphi(static_cast<int>(gCentre.phi().degrees()));
-              if (cphi < 0)
-                cphi += 360;
+        // base_bottom, base_top, height, strips, pads (all half length)
+        auto& parameters(roll->specs()->parameters());
+        float bottomEdge(parameters[0]);
+        float topEdge(parameters[1]);
+        float height(parameters[2]);
+        float nStrips(parameters[3]);
+        float nPads(parameters[4]);
 
-              double tx(gTop.x());
-              double ty(gTop.y());
-              double tz(gTop.z());
-              double teta(gTop.eta());
-              int tphi(static_cast<int>(gTop.phi().degrees()));
-              if (tphi < 0)
-                tphi += 360;
+        LocalPoint lCentre(0., 0., 0.);
+        GlobalPoint gCentre(bSurface.toGlobal(lCentre));
+        LocalPoint lTop(0., height, 0.);
+        GlobalPoint gTop(bSurface.toGlobal(lTop));
+        LocalPoint lBottom(0., -height, 0.);
+        GlobalPoint gBottom(bSurface.toGlobal(lBottom));
 
-              double bx(gBottom.x());
-              double by(gBottom.y());
-              double bz(gBottom.z());
-              double beta(gBottom.eta());
-              int bphi(static_cast<int>(gBottom.phi().degrees()));
-              if (bphi < 0)
-                bphi += 360;
+        // gx, gy, gz, geta, gphi (center)
+        double cx(gCentre.x());
+        double cy(gCentre.y());
+        double cz(gCentre.z());
+        double ceta(gCentre.eta());
+        double cphi(gCentre.phi().degrees());
+        if (cphi < 0.) cphi += 360.;
 
-              // pitch bottom, pitch top, pitch centre
-              float pitch(roll->pitch());
-              float topPitch(roll->localPitch(lTop));
-              float bottomPitch(roll->localPitch(lBottom));
+        double tx(gTop.x());
+        double ty(gTop.y());
+        double tz(gTop.z());
+        double teta(gTop.eta());
+        double tphi(gTop.phi().degrees());
+        if (tphi < 0.) tphi += 360.;
 
-              // Type - should be GHA[1-nRolls]
-              string type(roll->type().name());
+        double bx(gBottom.x());
+        double by(gBottom.y());
+        double bz(gBottom.z());
+        double beta(gBottom.eta());
+        double bphi(gBottom.phi().degrees());
+        if (bphi < 0.) bphi += 360.;
 
-              // print info about edges
-              LocalPoint lEdge1(topology->localPosition(0.));
-              LocalPoint lEdgeN(topology->localPosition((float)nStrips));
+        // pitch bottom, pitch top, pitch centre
+        float pitch(roll->pitch());
+        float topPitch(roll->localPitch(lTop));
+        float bottomPitch(roll->localPitch(lBottom));
 
-              double cstrip1(roll->toGlobal(lEdge1).phi().degrees());
-              double cstripN(roll->toGlobal(lEdgeN).phi().degrees());
-              double dphi(cstripN - cstrip1);
-              if (dphi < 0.)
-                dphi += 360.;
-              double deta(abs(beta - teta));
-              const bool printDetails(true);
-              if (printDetails) {
-                ofos << "    \t\tType: " << type << endl
-                     << "    \t\tDimensions[cm]: b = " << bottomEdge * 2 << ", B = " << topEdge * 2
-                     << ", h  = " << height * 2 << endl
-                     << "    \t\tnStrips = " << nStrips << ", nPads =  " << nPads << endl
-                     << "    \t\ttop(x,y,z)[cm] = (" << tx << ", " << ty << ", " << tz << "), top(eta,phi) = (" << teta
-                     << ", " << tphi << ")" << endl
-                     << "    \t\tcenter(x,y,z)[cm] = (" << cx << ", " << cy << ", " << cz << "), center(eta,phi) = ("
-                     << ceta << ", " << cphi << ")" << endl
-                     << "    \t\tbottom(x,y,z)[cm] = (" << bx << ", " << by << ", " << bz << "), bottom(eta,phi) = ("
-                     << beta << ", " << bphi << ")" << endl
-                     << "    \t\tpitch (top,center,bottom) = (" << topPitch << ", " << pitch << ", " << bottomPitch
-                     << "), dEta = " << deta << ", dPhi = " << dphi << endl;
-              }
-              ++k;
-            }
-            ++j;
-          }
-          ++i;
+        // Type - should be GHA[1-nRolls]
+        string type(roll->type().name());
+        // print info about edges
+        LocalPoint lEdge1(topology->localPosition(0.));
+        LocalPoint lEdgeN(topology->localPosition((float)nStrips));
+
+        double cstrip1(roll->toGlobal(lEdge1).phi().degrees());
+        double cstripN(roll->toGlobal(lEdgeN).phi().degrees());
+        double dphi(cstripN - cstrip1);
+        if (dphi < 0.) dphi += 360.;
+        double deta(abs(beta - teta));
+        const bool printDetails(true);
+
+        if (printDetails) {
+
+	  ofos << roll->id() << ", x: "<< gCentre.x() << " cm, y: " << gCentre.y() << " cm, z: " << gCentre.z()
+	  << " cm, 1stStrip: " << roll->toGlobal(roll->centreOfStrip(0)).phi().degrees() << " deg, lastStrip: "
+	  << roll->toGlobal(roll->centreOfStrip((roll->nstrips())-1)).phi().degrees()
+	  << " deg, rBottom: " << pow((pow(gBottom.x(),2.0)+pow(gBottom.y(),2.0)),0.5)
+	  << ", rCentre: " << pow((pow(gCentre.x(),2.0)+pow(gCentre.y(),2.0)),0.5)
+	  << ", rTop: " << pow((pow(gTop.x(),2.0)+pow(gTop.y(),2.0)),0.5) << endl;
+	  //" deg, ap: " << height << " cm , te: " << topEdge << " cm , be: " << bottomEdge << " cm." << std::endl;
         }
+
+	ofos << endl;
+        for (int i = 0; i < roll->nstrips(); i++) {
+		ofos << "  the " << i+1 << "-th strip R: "<< pow(pow((roll->centreOfStrip(i).x()),2.0) + pow((roll->centreOfStrip(i).y()),2.0), 0.5) << "cm, x: "
+		<< roll->centreOfStrip(i).x() << "cm. y: " << roll->centreOfStrip(i).y() << "cm." << endl;
+	}
+        ofos << endl;
       }
     }
   }
-
   ofos << dashedLine_ << " end" << std::endl;
 }
 
