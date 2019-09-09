@@ -244,8 +244,8 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
 
 	ofos << endl;
         for (int i = 0; i < roll->nstrips(); i++) {
-		ofos << "  the " << i+1 << "-th strip R: "<< pow(pow((roll->centreOfStrip(i).x()),2.0) + pow((roll->centreOfStrip(i).y()),2.0), 0.5) << "cm, x: "
-		<< roll->centreOfStrip(i).x() << "cm. y: " << roll->centreOfStrip(i).y() << "cm." << endl;
+		ofos << " the " << i+1 << "-th strip R: "<< pow(pow((roll->centreOfStrip(i).x()),2.0) + pow((roll->centreOfStrip(i).y()),2.0), 0.5) << "cm, x: "
+		<< roll->centreOfStrip(i).x() << "cm. y: " << roll->centreOfStrip(i).y() << "cm. z: " << roll->centreOfStrip(i).z() << "cm." << endl;
 	}
         ofos << endl;
       }
