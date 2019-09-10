@@ -151,11 +151,12 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
 
       int nRolls(ch->nEtaPartitions());
       const BoundPlane& bSurface(ch->surface());
+
       LocalPoint lCentre(0.,0.,0.);
       GlobalPoint gCentre(bSurface.toGlobal(lCentre));
 
       ofos << " " << std::endl;
-      ofos << ch->id() << ", center x: " << gCentre.x() << " cm, center y: " <<  gCentre.y() << " cm, center z: " << gCentre.z() << " cm." << std::endl; 
+      ofos << ch->id() << ", center x: " << gCentre.x() << " cm, center y: " <<  gCentre.y() << " cm, center z: " << gCentre.z() << " cm." << std::endl;
       ofos << " " << std::endl;
 
       /*
@@ -233,7 +234,7 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
 
         if (printDetails) {
 
-	  ofos << roll->id() << ", x: "<< gCentre.x() << " cm, y: " << gCentre.y() << " cm, z: " << gCentre.z()
+	  ofos << roll->id() << "x: "<< gCentre.x() << " cm, y: " << gCentre.y() << " cm, z: " << gCentre.z()
 	  << " cm, 1stStrip: " << roll->toGlobal(roll->centreOfStrip(0)).phi().degrees() << " deg, lastStrip: "
 	  << roll->toGlobal(roll->centreOfStrip((roll->nstrips())-1)).phi().degrees()
 	  << " deg, rBottom: " << pow((pow(gBottom.x(),2.0)+pow(gBottom.y(),2.0)),0.5)
@@ -242,12 +243,12 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
 	  //" deg, ap: " << height << " cm , te: " << topEdge << " cm , be: " << bottomEdge << " cm." << std::endl;
         }
 
-	ofos << endl;
+	/*ofos << endl;
         for (int i = 0; i < roll->nstrips(); i++) {
-		ofos << " the " << i+1 << "-th strip R: "<< pow(pow((roll->centreOfStrip(i).x()),2.0) + pow((roll->centreOfStrip(i).y()),2.0), 0.5) << "cm, x: "
-		<< roll->centreOfStrip(i).x() << "cm. y: " << roll->centreOfStrip(i).y() << "cm. z: " << roll->centreOfStrip(i).z() << "cm." << endl;
+		ofos << " the " << i+1 << "-th strip R: "<< pow(pow((roll->toGlobal(roll->centreOfStrip(i)).x()),2.0) + pow((roll->toGlobal(roll->centreOfStrip(i)).y()),2.0), 0.5) << "cm, x: "
+		<< roll->toGlobal(roll->centreOfStrip(i)).x() << "cm. y: " << roll->toGlobal(roll->centreOfStrip(i)).y() << "cm. z: " << roll->toGlobal(roll->centreOfStrip(i)).z() << "cm." << endl;
 	}
-        ofos << endl;
+        ofos << endl;*/
       }
     }
   }
