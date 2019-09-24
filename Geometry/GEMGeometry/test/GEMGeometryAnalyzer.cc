@@ -237,7 +237,7 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
 	double b(roll->specs_->_p[0]);
 	double B(roll->specs_->_p[1]);
 	double h(roll->specs_->_p[2]);
-	double r0(h*(B + b)/(B - b));
+	double r0(h*((B + b)/(B - b)-1));
 	//double theDistToBeam(roll->specs_->_top->theDistToBeam);
 	//const TrapezoidalStripTopology* trape(nStrips, pitch,height,  );
 	//double radius(roll->specs_->_top->radius());
@@ -245,10 +245,10 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
         if (printDetails) {
 
 	  ofos << roll->id() << "x: "<< gCentre.x() << " cm, y: " << gCentre.y() << " cm, z: " << gCentre.z()
-	  << " cm, 1stStrip: " << roll->toGlobal(roll->centreOfStrip(0)).phi().degrees() << " deg, lastStrip: "
-	  << roll->toGlobal(roll->centreOfStrip((roll->nstrips())-1)).phi().degrees()
-	  << "deg, pitch: " << pitch << ", localPitch: " << localPitch << ", theDistToBeam: " << r0 
-	  << "cm, rBottom: " << pow((pow(gBottom.x(),2.0)+pow(gBottom.y(),2.0)),0.5) << "cm." << endl;
+	  //<< " cm, 1stStrip: " << roll->toGlobal(roll->centreOfStrip(0)).phi().degrees() << " deg, lastStrip: "
+	  //<< roll->toGlobal(roll->centreOfStrip((roll->nstrips())-1)).phi().degrees()
+	  << " cm, pitch: " << pitch << "cm, localPitch: " << localPitch << " cm, theDistToBeam: " << r0
+	  << " cm, rBottom: " << pow((pow(gBottom.x(),2.0)+pow(gBottom.y(),2.0)),0.5) << " cm." << endl;
 	  //<< ", rCentre: " << pow((pow(gCentre.x(),2.0)+pow(gCentre.y(),2.0)),0.5)
 	  //<< ", rTop: " << pow((pow(gTop.x(),2.0)+pow(gTop.y(),2.0)),0.5) << endl;
 	  //" deg, ap: " << height << " cm , te: " << topEdge << " cm , be: " << bottomEdge << " cm." << std::endl;
