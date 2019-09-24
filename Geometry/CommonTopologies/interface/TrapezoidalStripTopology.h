@@ -68,16 +68,17 @@ public:
    */
   float radius() const { return theDistToBeam; }
 
-protected:
-  virtual float shiftOffset(float pitch_fraction);
-
-private:
   int theNumberOfStrips;
   float thePitch;  // pitch at the middle of the det. plane
   float theOffset;
   float theDistToBeam;
   float theDetHeight;
   int theYAxOr;
+
+protected:
+  virtual float shiftOffset(float pitch_fraction);
+
+private:
 };
 
 #endif

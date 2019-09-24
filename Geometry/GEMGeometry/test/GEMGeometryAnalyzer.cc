@@ -1,4 +1,3 @@
-
 /** Derived from DTGeometryAnalyzer by Nicola Amapane
  *
  *  \author M. Maggi - INFN Bari
@@ -10,13 +9,14 @@
 #include "FWCore/Framework/interface/EventSetup.h"
 #include "FWCore/Framework/interface/ESHandle.h"
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
-
 #include "Geometry/GEMGeometry/interface/GEMGeometry.h"
 #include "Geometry/Records/interface/MuonGeometryRecord.h"
 #include "Geometry/GEMGeometry/interface/GEMEtaPartitionSpecs.h"
 #include "Geometry/CommonTopologies/interface/StripTopology.h"
-
+#include "Geometry/CommonTopologies/interface/TrapezoidalStripTopology.h"
 #include "DataFormats/Math/interface/deltaPhi.h"
+#include "Geometry/CommonDetUnit/interface/GeomDetType.h"
+
 
 #include <memory>
 #include <fstream>
@@ -25,10 +25,10 @@
 #include <vector>
 #include <iomanip>
 #include <set>
-
 #include <math.h>
 
 class GEMGeometryAnalyzer : public edm::one::EDAnalyzer<> {
+
 public:
   GEMGeometryAnalyzer(const edm::ParameterSet& pset);
 
@@ -231,15 +231,26 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
         if (dphi < 0.) dphi += 360.;
         double deta(abs(beta - teta));
         const bool printDetails(true);
+	double localPitch(roll->localPitch(lCentre));
+	//double localPitchFromTrape(roll->specs_->_top->localPitch(lCentre));
+
+	double b(roll->specs_->_p[0]);
+	double B(roll->specs_->_p[1]);
+	double h(roll->specs_->_p[2]);
+	double r0(h*(B + b)/(B - b));
+	//double theDistToBeam(roll->specs_->_top->theDistToBeam);
+	//const TrapezoidalStripTopology* trape(nStrips, pitch,height,  );
+	//double radius(roll->specs_->_top->radius());
 
         if (printDetails) {
 
 	  ofos << roll->id() << "x: "<< gCentre.x() << " cm, y: " << gCentre.y() << " cm, z: " << gCentre.z()
 	  << " cm, 1stStrip: " << roll->toGlobal(roll->centreOfStrip(0)).phi().degrees() << " deg, lastStrip: "
 	  << roll->toGlobal(roll->centreOfStrip((roll->nstrips())-1)).phi().degrees()
-	  << " deg, rBottom: " << pow((pow(gBottom.x(),2.0)+pow(gBottom.y(),2.0)),0.5)
-	  << ", rCentre: " << pow((pow(gCentre.x(),2.0)+pow(gCentre.y(),2.0)),0.5)
-	  << ", rTop: " << pow((pow(gTop.x(),2.0)+pow(gTop.y(),2.0)),0.5) << endl;
+	  << "deg, pitch: " << pitch << ", localPitch: " << localPitch << ", theDistToBeam: " << r0 
+	  << "cm, rBottom: " << pow((pow(gBottom.x(),2.0)+pow(gBottom.y(),2.0)),0.5) << "cm." << endl;
+	  //<< ", rCentre: " << pow((pow(gCentre.x(),2.0)+pow(gCentre.y(),2.0)),0.5)
+	  //<< ", rTop: " << pow((pow(gTop.x(),2.0)+pow(gTop.y(),2.0)),0.5) << endl;
 	  //" deg, ap: " << height << " cm , te: " << topEdge << " cm , be: " << bottomEdge << " cm." << std::endl;
         }
 
