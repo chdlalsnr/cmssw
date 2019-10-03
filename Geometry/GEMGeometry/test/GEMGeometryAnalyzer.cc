@@ -50,6 +50,11 @@ public:
     }else{ return a.id().region() < b.id().region();}
   };
 
+<<<<<<< HEAD
+  double getRadian(double deg) { return deg*(3.1415926535897/180.); }
+
+=======
+>>>>>>> f4972c61e9d6fe508ebf554295c3179b37ddef9e
 private:
   const std::string& myName() { return myName_; }
 
@@ -170,7 +175,10 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
       *   gap thickness
       *   sum of all dx + gap = chamber height
       */
+<<<<<<< HEAD
+=======
 
+>>>>>>> f4972c61e9d6fe508ebf554295c3179b37ddef9e
       for (auto roll : ch->etaPartitions()) {
 
         GEMDetId rId(roll->id());
@@ -242,16 +250,30 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
 	//const TrapezoidalStripTopology* trape(nStrips, pitch,height,  );
 	//double radius(roll->specs_->_top->radius());
 
+<<<<<<< HEAD
+	//static double b_accum = (127 + 7*(2*h)) * tan(getRadian(5.));
+=======
+>>>>>>> f4972c61e9d6fe508ebf554295c3179b37ddef9e
         if (printDetails) {
 
 	  ofos << roll->id() << "x: "<< gCentre.x() << " cm, y: " << gCentre.y() << " cm, z: " << gCentre.z()
 	  //<< " cm, 1stStrip: " << roll->toGlobal(roll->centreOfStrip(0)).phi().degrees() << " deg, lastStrip: "
 	  //<< roll->toGlobal(roll->centreOfStrip((roll->nstrips())-1)).phi().degrees()
+<<<<<<< HEAD
+	  //" cm, rBottom: " << pow((pow(gBottom.x(),2.0)+pow(gBottom.y(),2.0)),0.5)
+	  << " cm, h: " << h << " cm, theDistToBeam: " << r0 << " cm, distToBeam_from_b: " << b/tan(getRadian(5.)) << " cm, b: " << b << " cm, b_fromDistToBeam: " << r0*tan(getRadian(5.))
+	  << " cm." << endl; //overWrapped: " << 3*pitch << "cm." << endl; 
+	  //<< ", rCentre: " << pow((pow(gCentre.x(),2.0)+pow(gCentre.y(),2.0)),0.5)
+	  //<< ", rTop: " << pow((pow(gTop.x(),2.0)+pow(gTop.y(),2.0)),0.5) << endl;
+	  //" deg, ap: " << height << " cm , te: " << topEdge << " cm , be: " << bottomEdge << " cm." << std::endl;
+	  //b_accum -= 2*h*tan(getRadian(5.));
+=======
 	  << " cm, pitch: " << pitch << "cm, localPitch: " << localPitch << " cm, theDistToBeam: " << r0
 	  << " cm, rBottom: " << pow((pow(gBottom.x(),2.0)+pow(gBottom.y(),2.0)),0.5) << " cm." << endl;
 	  //<< ", rCentre: " << pow((pow(gCentre.x(),2.0)+pow(gCentre.y(),2.0)),0.5)
 	  //<< ", rTop: " << pow((pow(gTop.x(),2.0)+pow(gTop.y(),2.0)),0.5) << endl;
 	  //" deg, ap: " << height << " cm , te: " << topEdge << " cm , be: " << bottomEdge << " cm." << std::endl;
+>>>>>>> f4972c61e9d6fe508ebf554295c3179b37ddef9e
         }
 
 	/*ofos << endl;
