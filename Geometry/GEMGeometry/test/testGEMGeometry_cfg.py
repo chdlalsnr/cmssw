@@ -9,9 +9,13 @@ from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(1)
+    input = cms.untracked.int32(-1)
 )
-process.source = cms.Source("EmptySource")
+
+process.source = cms.Source ("PoolSource",
+	fileNames = cms.untracked.vstring('file:/cms/ldap_home/chdlalsnr/CMSSW_11_0_0_pre3/src/20011/step3.root'),
+	skipBadFiles = cms.untracked.bool(True)
+)
 
 process.MessageLogger = cms.Service("MessageLogger",
                                     destinations = cms.untracked.vstring('cout'),
@@ -23,10 +27,10 @@ process.MessageLogger = cms.Service("MessageLogger",
         GEMGeometryBuilderFromDDD = cms.untracked.PSet(
             limit = cms.untracked.int32(-1)
             )
-        )
-                                    )
+        )                                   )
 
-process.test = cms.EDAnalyzer("GEMGeometryAnalyzer")
+process.test = cms.EDAnalyzer("GEMGeometryAnalyzer",
+	GEMRecHitInputLabel = cms.InputTag('gemRecHits'),)
 
 process.p = cms.Path(process.test)
 

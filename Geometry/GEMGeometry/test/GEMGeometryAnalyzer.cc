@@ -224,6 +224,12 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& /*iEvent*/, const edm::Event
                 dphi += 360.;
               double deta(abs(beta - teta));
               const bool printDetails(true);
+
+	      //double b(roll->specs_->_p[0]);
+  	      //double B(roll->specs_->_p[1]);
+	      //double h(roll->specs_->_p[2]);
+	      //double r0(h*((B + b)/(B - b)-1));
+
               if (printDetails) {
                 ofos << "    \t\tType: " << type << endl
                      << "    \t\tDimensions[cm]: b = " << bottomEdge * 2 << ", B = " << topEdge * 2

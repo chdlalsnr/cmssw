@@ -7,4 +7,5 @@
 </library>
 <library   file="ME0GeometryAnalyzer.cc" name="ME0GeometryAnalyzer">
 </library>
-
+<library   file="HBGEMGeometryValidator.cc" name="HBGEMGeometryValidator">
+</library>
