@@ -1,9 +1,4 @@
 
-/** Derived from DTGeometryAnalyzer by Nicola Amapane
- *
- *  \author M. Maggi - INFN Bari
- */
-
 #include "FWCore/Framework/interface/Frameworkfwd.h"
 #include "FWCore/Framework/interface/one/EDAnalyzer.h"
 #include "FWCore/Framework/interface/Event.h"
@@ -29,11 +24,11 @@
 #include <set>
 #include "math.h"
 
-class GEMGeometryAnalyzer : public edm::one::EDAnalyzer<> {
+class HBGEMGeometryValidator : public edm::one::EDAnalyzer<> {
 
 public:
-  GEMGeometryAnalyzer(const edm::ParameterSet& pset);
-  ~GEMGeometryAnalyzer() override;
+  HBGEMGeometryValidator(const edm::ParameterSet& pset);
+  ~HBGEMGeometryValidator() override;
 
   void beginJob() override {}
   void analyze(edm::Event const& iEvent, edm::EventSetup const&) override;
@@ -45,13 +40,13 @@ private:
 };
 
 using namespace std;
-GEMGeometryAnalyzer::GEMGeometryAnalyzer(const edm::ParameterSet& pset) {
+HBGEMGeometryValidator::HBGEMGeometryValidator(const edm::ParameterSet& pset) {
   GEMRecHitToken = consumes<GEMRecHitCollection>( pset.getParameter<edm::InputTag>("GEMRecHitInputLabel") );
 }
 
-GEMGeometryAnalyzer::~GEMGeometryAnalyzer() = default;
+HBGEMGeometryValidator::~HBGEMGeometryValidator() = default;
 
-void GEMGeometryAnalyzer::analyze(const edm::Event& e, const edm::EventSetup& iSetup) {
+void HBGEMGeometryValidator::analyze(const edm::Event& e, const edm::EventSetup& iSetup) {
   edm::ESHandle<GEMGeometry> pDD;
   iSetup.get<MuonGeometryRecord>().get(pDD);
 
@@ -169,4 +164,4 @@ void GEMGeometryAnalyzer::analyze(const edm::Event& e, const edm::EventSetup& iS
 
 //define this as a plug-in
 #include "FWCore/Framework/interface/MakerMacros.h"
-DEFINE_FWK_MODULE(GEMGeometryAnalyzer);
+DEFINE_FWK_MODULE(HBGEMGeometryValidator);
