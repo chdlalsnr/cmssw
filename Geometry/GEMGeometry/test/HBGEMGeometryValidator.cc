@@ -114,8 +114,7 @@ void HBGEMGeometryValidator::analyze(const edm::Event& e, const edm::EventSetup&
     //Float_t globalZ = rhGP.z();
     double deg = atan2(globalY,globalX)*180./3.1415926535897;
 
-    if ((globalY/globalX > 0.) && (globalY < 0.)) deg += 360.;
-    if (deg < -5.) deg += 360.;
+    if ((deg > -180.) && (deg < -5.)) deg += 360.;
 
     ofos << "Global Location : (" << globalX << " cm, " << globalY << " cm) Detector Id : region " << region << " station " << station << " chamber " << chamber << " layer " << layer << " roll " << roll << endl;
 
@@ -123,7 +122,7 @@ void HBGEMGeometryValidator::analyze(const edm::Event& e, const edm::EventSetup&
     if (region == -1) {
       if (station == 1) {
 	//if (isOdd) {
-	if ( (deg > -5. && deg < 5.) || (deg > 25. && deg < 35.) || (deg > 45. && deg < 55.) || (deg > 65. && deg < 75.) || (deg > 85. && deg < 95.) || (deg > 105. && deg < 115.) || (deg > 125. && deg < 135.) || (deg > 145. && deg < 155.) || (deg > 165. && deg < 175.) || (deg > 185. && deg < 195.) || (deg > 205. && deg < 215.) || (deg > 225. && deg < 235.) || (deg > 245. && deg < 255.) || (deg > 265. && deg < 275.) || (deg > 285. && deg < 295.) || (deg > 305. && deg < 315.) || (deg > 325. && deg < 335.) || (deg > 345. && deg < 355.) ) {
+	if ( (deg > -5. && deg < 5.) || (deg > 15. && deg < 25.) || (deg > 35. && deg < 45.) || (deg > 55. && deg < 65.) || (deg > 75. && deg < 85.) || (deg > 95. && deg < 105.) || (deg > 115. && deg < 125.) || (deg > 135. && deg < 145.) || (deg > 155. && deg < 165.) || (deg > 175. && deg < 185.) || (deg > 195. && deg < 205.) || (deg > 215. && deg < 225.) || (deg > 235. && deg < 245.) || (deg > 255. && deg < 265.) || (deg > 275. && deg < 285.) || (deg > 295. && deg < 305.) || (deg > 315. && deg < 325.) || (deg > 335. && deg < 345.) ) {
 	  if ( (pow(pow(globalX,2)+pow(globalY,2),.5)>r) && (pow(pow(globalX,2)+pow(globalY,2),.5)<Rs) ) {
 	    x_r_1s1t.push_back(globalX);
 	    y_r_1s1t.push_back(globalY);
@@ -161,7 +160,7 @@ void HBGEMGeometryValidator::analyze(const edm::Event& e, const edm::EventSetup&
     else if (region == 1) {
       if (station == 1) {
 	//if (isOdd == 1) {
-        if ( (deg > -5. && deg < 5.) || (deg > 25. && deg < 35.) || (deg > 45. && deg < 55.) || (deg > 65. && deg < 75.) || (deg > 85. && deg < 95.) || (deg > 105. && deg < 115.) || (deg > 125. && deg < 135.) || (deg > 145. && deg < 155.) || (deg > 165. && deg < 175.) || (deg > 185. && deg < 195.) || (deg > 205. && deg < 215.) || (deg > 225. && deg < 235.) || (deg > 245. && deg < 255.) || (deg > 265. && deg < 275.) || (deg > 285. && deg < 295.) || (deg > 305. && deg < 315.) || (deg > 325. && deg < 335.) || (deg > 345. && deg < 355.) ) {
+	if ( (deg > -5. && deg < 5.) || (deg > 15. && deg < 25.) || (deg > 35. && deg < 45.) || (deg > 55. && deg < 65.) || (deg > 75. && deg < 85.) || (deg > 95. && deg < 105.) || (deg > 115. && deg < 125.) || (deg > 135. && deg < 145.) || (deg > 155. && deg < 165.) || (deg > 175. && deg < 185.) || (deg > 195. && deg < 205.) || (deg > 215. && deg < 225.) || (deg > 235. && deg < 245.) || (deg > 255. && deg < 265.) || (deg > 275. && deg < 285.) || (deg > 295. && deg < 305.) || (deg > 315. && deg < 325.) || (deg > 335. && deg < 345.) ) {
           if ( (pow(pow(globalX,2)+pow(globalY,2),.5)>r) && (pow(pow(globalX,2)+pow(globalY,2),.5)<Rs) ) {
             x_r1s1t.push_back(globalX);
             y_r1s1t.push_back(globalY);

@@ -5,15 +5,10 @@ Global Location : (131.21 cm, -106.076 cm) Detector Id : region -1 station 1 cha
 Global Location : (-189.894 cm, 136.033 cm) Detector Id : region 1 station 2 chamber 8 layer 2 roll 4
 Global Location : (180.797 cm, -149.025 cm) Detector Id : region -1 station 2 chamber 17 layer 2 roll 4
 Global Location : (-2.95799 cm, 241.398 cm) Detector Id : region -1 station 1 chamber 10 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-2.95799 cm, 241.398 cm) Detector Id : region -1 station 1 chamber 10 layer 1 roll 1 **********
 Global Location : (-5.19044 cm, -241.398 cm) Detector Id : region 1 station 1 chamber 28 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-5.19044 cm, -241.398 cm) Detector Id : region 1 station 1 chamber 28 layer 1 roll 1 **********
 Global Location : (-2.95799 cm, 241.398 cm) Detector Id : region -1 station 1 chamber 10 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-2.95799 cm, 241.398 cm) Detector Id : region -1 station 1 chamber 10 layer 2 roll 1 **********
 Global Location : (-5.24625 cm, -241.398 cm) Detector Id : region 1 station 1 chamber 28 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-5.24625 cm, -241.398 cm) Detector Id : region 1 station 1 chamber 28 layer 2 roll 1 **********
 Global Location : (-5.19044 cm, -241.398 cm) Detector Id : region 1 station 1 chamber 28 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-5.19044 cm, -241.398 cm) Detector Id : region 1 station 1 chamber 28 layer 2 roll 1 **********
 Global Location : (-181.215 cm, 74.7757 cm) Detector Id : region -1 station 1 chamber 17 layer 1 roll 3
 Global Location : (184.731 cm, -65.1163 cm) Detector Id : region 1 station 1 chamber 35 layer 1 roll 3
 Global Location : (159.644 cm, -54.6193 cm) Detector Id : region 1 station 1 chamber 35 layer 1 roll 5
@@ -107,9 +102,7 @@ Global Location : (-192.253 cm, -138.076 cm) Detector Id : region 1 station 2 ch
 Global Location : (217.828 cm, -89.5288 cm) Detector Id : region 1 station 2 chamber 18 layer 2 roll 4
 Global Location : (42.9327 cm, -204.328 cm) Detector Id : region 1 station 2 chamber 15 layer 2 roll 5
 Global Location : (234.135 cm, -62.3096 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (234.135 cm, -62.3096 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1 **********
 Global Location : (234.144 cm, -62.2547 cm) Detector Id : region 1 station 1 chamber 36 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (234.144 cm, -62.2547 cm) Detector Id : region 1 station 1 chamber 36 layer 2 roll 1 **********
 Global Location : (-56.6125 cm, 149.282 cm) Detector Id : region -1 station 1 chamber 12 layer 1 roll 6
 Global Location : (73.2001 cm, -138.669 cm) Detector Id : region 1 station 1 chamber 31 layer 1 roll 6
 Global Location : (-56.5431 cm, 149.308 cm) Detector Id : region -1 station 1 chamber 12 layer 2 roll 6
@@ -179,13 +172,11 @@ Global Location : (213.28 cm, -114.992 cm) Detector Id : region 1 station 2 cham
 Global Location : (-216.007 cm, 96.3254 cm) Detector Id : region -1 station 2 chamber 9 layer 2 roll 4
 Global Location : (206.999 cm, -111.605 cm) Detector Id : region 1 station 2 chamber 17 layer 2 roll 4
 Global Location : (62.9483 cm, -233.979 cm) Detector Id : region -1 station 1 chamber 30 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (62.9483 cm, -233.979 cm) Detector Id : region -1 station 1 chamber 30 layer 1 roll 1 **********
 Global Location : (-171.73 cm, -124.014 cm) Detector Id : region -1 station 1 chamber 23 layer 1 roll 2
 Global Location : (176.976 cm, 101.741 cm) Detector Id : region 1 station 1 chamber 4 layer 1 roll 3
 Global Location : (157.097 cm, 61.6196 cm) Detector Id : region -1 station 1 chamber 3 layer 1 roll 5
 Global Location : (-155.235 cm, -77.4215 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 5
 Global Location : (63.0007 cm, -233.96 cm) Detector Id : region -1 station 1 chamber 30 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (63.0007 cm, -233.96 cm) Detector Id : region -1 station 1 chamber 30 layer 2 roll 1 **********
 Global Location : (-171.699 cm, -124.051 cm) Detector Id : region -1 station 1 chamber 23 layer 2 roll 2
 Global Location : (177 cm, 101.7 cm) Detector Id : region 1 station 1 chamber 4 layer 2 roll 3
 Global Location : (157.11 cm, 61.583 cm) Detector Id : region -1 station 1 chamber 3 layer 2 roll 5
@@ -265,7 +256,6 @@ Global Location : (-276.742 cm, 141.566 cm) Detector Id : region 1 station 2 cha
 Global Location : (-255.612 cm, 130.606 cm) Detector Id : region 1 station 2 chamber 8 layer 2 roll 2
 Global Location : (248.516 cm, -140.739 cm) Detector Id : region -1 station 2 chamber 17 layer 2 roll 2
 Global Location : (144.607 cm, 193.782 cm) Detector Id : region -1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (144.607 cm, 193.782 cm) Detector Id : region -1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (-141.253 cm, -43.2879 cm) Detector Id : region -1 station 2 chamber 11 layer 2 roll 8
 Global Location : (6.15624 cm, 135.854 cm) Detector Id : region 1 station 1 chamber 10 layer 1 roll 8
 Global Location : (-11.8809 cm, -135.295 cm) Detector Id : region -1 station 1 chamber 27 layer 1 roll 8
@@ -374,17 +364,12 @@ Global Location : (209.037 cm, -25.3598 cm) Detector Id : region -1 station 2 ch
 Global Location : (-25.3079 cm, 164.927 cm) Detector Id : region -1 station 2 chamber 6 layer 2 roll 7
 Global Location : (3.32081 cm, -166.782 cm) Detector Id : region 1 station 2 chamber 14 layer 2 roll 7
 Global Location : (2.95799 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (2.95799 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 1 roll 1 **********
 Global Location : (-14.3677 cm, 221.943 cm) Detector Id : region 1 station 1 chamber 10 layer 1 roll 2
 Global Location : (-13.9572 cm, 221.943 cm) Detector Id : region 1 station 1 chamber 10 layer 1 roll 2
 Global Location : (-15.6829 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-15.6829 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 2 roll 1 **********
 Global Location : (-5.69274 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-5.69274 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1 **********
 Global Location : (-4.91139 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-4.91139 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1 **********
 Global Location : (2.90218 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (2.90218 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1 **********
 Global Location : (-14.3677 cm, 221.943 cm) Detector Id : region 1 station 1 chamber 10 layer 2 roll 2
 Global Location : (-13.6493 cm, 221.943 cm) Detector Id : region 1 station 1 chamber 10 layer 2 roll 2
 Global Location : (-23.0411 cm, 168.679 cm) Detector Id : region -1 station 2 chamber 6 layer 1 roll 7
@@ -412,9 +397,7 @@ Global Location : (-143.722 cm, -186.606 cm) Detector Id : region 1 station 2 ch
 Global Location : (195.243 cm, 74.5995 cm) Detector Id : region -1 station 2 chamber 2 layer 2 roll 5
 Global Location : (-205.234 cm, -46.1747 cm) Detector Id : region 1 station 2 chamber 10 layer 2 roll 5
 Global Location : (-144.051 cm, 194.249 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-144.051 cm, 194.249 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1 **********
 Global Location : (-144.094 cm, 194.213 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-144.094 cm, 194.213 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1 **********
 Global Location : (1.28461 cm, 169.428 cm) Detector Id : region -1 station 2 chamber 5 layer 1 roll 7
 Global Location : (-21.7195 cm, -167.64 cm) Detector Id : region 1 station 2 chamber 14 layer 1 roll 7
 Global Location : (1.26151 cm, 166.381 cm) Detector Id : region -1 station 2 chamber 5 layer 2 roll 7
@@ -650,23 +633,15 @@ Global Location : (55.0155 cm, -304.012 cm) Detector Id : region 1 station 2 cha
 Global Location : (-163.133 cm, 96.4157 cm) Detector Id : region 1 station 2 chamber 8 layer 2 roll 6
 Global Location : (154.298 cm, -109.033 cm) Detector Id : region -1 station 2 chamber 17 layer 2 roll 6
 Global Location : (-210.34 cm, 118.475 cm) Detector Id : region 1 station 1 chamber 16 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-210.34 cm, 118.475 cm) Detector Id : region 1 station 1 chamber 16 layer 1 roll 1 **********
 Global Location : (-206.21 cm, 125.629 cm) Detector Id : region 1 station 1 chamber 16 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-206.21 cm, 125.629 cm) Detector Id : region 1 station 1 chamber 16 layer 1 roll 1 **********
 Global Location : (-205.819 cm, 126.306 cm) Detector Id : region 1 station 1 chamber 16 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-205.819 cm, 126.306 cm) Detector Id : region 1 station 1 chamber 16 layer 1 roll 1 **********
 Global Location : (218.796 cm, -103.83 cm) Detector Id : region -1 station 1 chamber 34 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (218.796 cm, -103.83 cm) Detector Id : region -1 station 1 chamber 34 layer 1 roll 1 **********
 Global Location : (-37.4449 cm, 192.281 cm) Detector Id : region 1 station 1 chamber 11 layer 1 roll 3
 Global Location : (28.7042 cm, -193.822 cm) Detector Id : region -1 station 1 chamber 29 layer 1 roll 3
 Global Location : (-205.875 cm, 126.209 cm) Detector Id : region 1 station 1 chamber 16 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-205.875 cm, 126.209 cm) Detector Id : region 1 station 1 chamber 16 layer 2 roll 1 **********
 Global Location : (-205.54 cm, 126.789 cm) Detector Id : region 1 station 1 chamber 16 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-205.54 cm, 126.789 cm) Detector Id : region 1 station 1 chamber 16 layer 2 roll 1 **********
 Global Location : (-205.261 cm, 127.272 cm) Detector Id : region 1 station 1 chamber 16 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-205.261 cm, 127.272 cm) Detector Id : region 1 station 1 chamber 16 layer 2 roll 1 **********
 Global Location : (218.907 cm, -103.637 cm) Detector Id : region -1 station 1 chamber 34 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (218.907 cm, -103.637 cm) Detector Id : region -1 station 1 chamber 34 layer 2 roll 1 **********
 Global Location : (-37.534 cm, 192.265 cm) Detector Id : region 1 station 1 chamber 11 layer 2 roll 3
 Global Location : (28.7042 cm, -193.822 cm) Detector Id : region -1 station 1 chamber 29 layer 2 roll 3
 Global Location : (-58.0442 cm, 281.918 cm) Detector Id : region 1 station 2 chamber 6 layer 1 roll 2
@@ -714,12 +689,10 @@ Global Location : (207.632 cm, 18.7659 cm) Detector Id : region -1 station 2 cha
 Global Location : (-209.83 cm, 6.35892 cm) Detector Id : region 1 station 2 chamber 10 layer 2 roll 5
 Global Location : (-210.013 cm, 8.44437 cm) Detector Id : region 1 station 2 chamber 10 layer 2 roll 5
 Global Location : (86.4438 cm, 225.427 cm) Detector Id : region 1 station 1 chamber 8 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (86.4438 cm, 225.427 cm) Detector Id : region 1 station 1 chamber 8 layer 1 roll 1 **********
 Global Location : (75.4267 cm, 208.733 cm) Detector Id : region -1 station 1 chamber 8 layer 1 roll 2
 Global Location : (-63.0345 cm, -213.244 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 2
 Global Location : (-63.3238 cm, -213.138 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 2
 Global Location : (86.3914 cm, 225.446 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (86.3914 cm, 225.446 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 1 **********
 Global Location : (75.4749 cm, 208.716 cm) Detector Id : region -1 station 1 chamber 8 layer 2 roll 2
 Global Location : (-62.9863 cm, -213.261 cm) Detector Id : region 1 station 1 chamber 26 layer 2 roll 2
 Global Location : (-89.7859 cm, -298.971 cm) Detector Id : region 1 station 2 chamber 13 layer 1 roll 1
@@ -729,7 +702,6 @@ Global Location : (-90.092 cm, -297.711 cm) Detector Id : region 1 station 2 cha
 Global Location : (-86.2226 cm, -299.516 cm) Detector Id : region 1 station 2 chamber 13 layer 2 roll 1
 Global Location : (-85.4887 cm, -299.858 cm) Detector Id : region 1 station 2 chamber 13 layer 2 roll 1
 Global Location : (140.503 cm, -197.226 cm) Detector Id : region -1 station 1 chamber 32 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (140.503 cm, -197.226 cm) Detector Id : region -1 station 1 chamber 32 layer 1 roll 1 **********
 Global Location : (-187.116 cm, 21.3429 cm) Detector Id : region 1 station 1 chamber 18 layer 1 roll 4
 Global Location : (183.939 cm, -39.362 cm) Detector Id : region -1 station 1 chamber 36 layer 1 roll 4
 Global Location : (-187.131 cm, 21.2573 cm) Detector Id : region 1 station 1 chamber 18 layer 2 roll 4
@@ -1194,7 +1166,6 @@ Global Location : (80.2831 cm, -174.429 cm) Detector Id : region -1 station 2 ch
 Global Location : (-61.5397 cm, 213.788 cm) Detector Id : region -1 station 1 chamber 12 layer 1 roll 2
 Global Location : (74.173 cm, -209.19 cm) Detector Id : region 1 station 1 chamber 30 layer 1 roll 2
 Global Location : (80.6748 cm, -227.527 cm) Detector Id : region 1 station 1 chamber 30 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (80.6748 cm, -227.527 cm) Detector Id : region 1 station 1 chamber 30 layer 2 roll 1 **********
 Global Location : (-61.5397 cm, 213.788 cm) Detector Id : region -1 station 1 chamber 12 layer 2 roll 2
 Global Location : (-33.5722 cm, 165.857 cm) Detector Id : region -1 station 2 chamber 6 layer 1 roll 7
 Global Location : (-17.2686 cm, 170.226 cm) Detector Id : region 1 station 2 chamber 6 layer 1 roll 7
@@ -1430,7 +1401,6 @@ Global Location : (-163.388 cm, -35.4709 cm) Detector Id : region -1 station 2 c
 Global Location : (198.65 cm, 48.9735 cm) Detector Id : region -1 station 1 chamber 2 layer 1 roll 3
 Global Location : (-188.402 cm, -55.0314 cm) Detector Id : region 1 station 1 chamber 21 layer 1 roll 3
 Global Location : (170.559 cm, 172.006 cm) Detector Id : region -1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (170.559 cm, 172.006 cm) Detector Id : region -1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (198.659 cm, 48.927 cm) Detector Id : region -1 station 1 chamber 2 layer 2 roll 3
 Global Location : (-188.402 cm, -55.0314 cm) Detector Id : region 1 station 1 chamber 21 layer 2 roll 3
 Global Location : (282.5 cm, 67.815 cm) Detector Id : region -1 station 2 chamber 1 layer 1 roll 2
@@ -1541,11 +1511,11 @@ Global Location : (-175.937 cm, -81.7336 cm) Detector Id : region -1 station 2 c
 Global Location : (193.052 cm, 79.2976 cm) Detector Id : region 1 station 2 chamber 2 layer 2 roll 5
 Global Location : (-189.092 cm, -87.7902 cm) Detector Id : region -1 station 2 chamber 11 layer 2 roll 5
 Global Location : (171.542 cm, 171.181 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1
+********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (171.542 cm, 171.181 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (-162.008 cm, -179.181 cm) Detector Id : region -1 station 1 chamber 24 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-162.008 cm, -179.181 cm) Detector Id : region -1 station 1 chamber 24 layer 1 roll 1 **********
 Global Location : (171.542 cm, 171.181 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1
+********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (171.542 cm, 171.181 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (-161.965 cm, -179.217 cm) Detector Id : region -1 station 1 chamber 24 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-161.965 cm, -179.217 cm) Detector Id : region -1 station 1 chamber 24 layer 2 roll 1 **********
 Global Location : (60.6342 cm, 134.281 cm) Detector Id : region 1 station 2 chamber 4 layer 1 roll 8
 Global Location : (15.4619 cm, 287.08 cm) Detector Id : region 1 station 2 chamber 5 layer 1 roll 2
 Global Location : (-204.706 cm, 207.434 cm) Detector Id : region -1 station 2 chamber 7 layer 1 roll 2
@@ -1575,12 +1545,10 @@ Global Location : (-167.52 cm, -23.0872 cm) Detector Id : region 1 station 2 cha
 Global Location : (165.092 cm, 15.996 cm) Detector Id : region -1 station 2 chamber 1 layer 2 roll 7
 Global Location : (-164.508 cm, -22.672 cm) Detector Id : region 1 station 2 chamber 10 layer 2 roll 7
 Global Location : (-218.349 cm, 104.604 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-218.349 cm, 104.604 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 1 **********
 Global Location : (163.382 cm, 92.9736 cm) Detector Id : region -1 station 1 chamber 4 layer 1 roll 4
 Global Location : (159.883 cm, 99.0333 cm) Detector Id : region -1 station 1 chamber 4 layer 1 roll 4
 Global Location : (-164.555 cm, -90.9411 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 4
 Global Location : (-218.349 cm, 104.604 cm) Detector Id : region -1 station 1 chamber 16 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-218.349 cm, 104.604 cm) Detector Id : region -1 station 1 chamber 16 layer 2 roll 1 **********
 Global Location : (215.071 cm, -75.6434 cm) Detector Id : region 1 station 1 chamber 35 layer 2 roll 1
 Global Location : (159.883 cm, 99.0333 cm) Detector Id : region -1 station 1 chamber 4 layer 2 roll 4
 Global Location : (-164.577 cm, -90.9035 cm) Detector Id : region 1 station 1 chamber 22 layer 2 roll 4
@@ -1605,17 +1573,11 @@ Global Location : (-147.108 cm, -8.91027 cm) Detector Id : region -1 station 2 c
 Global Location : (146.564 cm, 3.51734 cm) Detector Id : region 1 station 2 chamber 1 layer 2 roll 8
 Global Location : (-146.097 cm, -8.84904 cm) Detector Id : region -1 station 2 chamber 10 layer 2 roll 8
 Global Location : (20.4269 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (20.4269 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 1 roll 1 **********
 Global Location : (3.34867 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (3.34867 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 1 roll 1 **********
 Global Location : (3.79516 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (3.79516 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 1 roll 1 **********
 Global Location : (20.4269 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (20.4269 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 2 roll 1 **********
 Global Location : (3.90678 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (3.90678 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1 **********
 Global Location : (4.24165 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (4.24165 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1 **********
 Global Location : (-54.0806 cm, 150.204 cm) Detector Id : region 1 station 1 chamber 12 layer 1 roll 6
 Global Location : (3.32184 cm, -159.642 cm) Detector Id : region -1 station 1 chamber 28 layer 1 roll 6
 Global Location : (-58.7311 cm, 162.884 cm) Detector Id : region 1 station 1 chamber 12 layer 2 roll 5
@@ -1661,14 +1623,10 @@ Global Location : (-122.477 cm, 168.745 cm) Detector Id : region 1 station 2 cha
 Global Location : (64.5499 cm, -198.536 cm) Detector Id : region -1 station 2 chamber 15 layer 2 roll 5
 Global Location : (-110.291 cm, 153.417 cm) Detector Id : region 1 station 2 chamber 7 layer 2 roll 6
 Global Location : (158.075 cm, 182.482 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (158.075 cm, 182.482 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (-151.191 cm, -188.258 cm) Detector Id : region -1 station 1 chamber 24 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-151.191 cm, -188.258 cm) Detector Id : region -1 station 1 chamber 24 layer 1 roll 1 **********
 Global Location : (-113.935 cm, -130.426 cm) Detector Id : region -1 station 1 chamber 24 layer 1 roll 5
 Global Location : (158.075 cm, 182.482 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (158.075 cm, 182.482 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (-151.191 cm, -188.258 cm) Detector Id : region -1 station 1 chamber 24 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-151.191 cm, -188.258 cm) Detector Id : region -1 station 1 chamber 24 layer 2 roll 1 **********
 Global Location : (106.36 cm, 136.782 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 5
 Global Location : (-113.904 cm, -130.452 cm) Detector Id : region -1 station 1 chamber 24 layer 2 roll 5
 Global Location : (147.514 cm, 192.838 cm) Detector Id : region 1 station 2 chamber 3 layer 1 roll 4
@@ -1916,9 +1874,7 @@ Global Location : (81.5111 cm, 192.02 cm) Detector Id : region 1 station 2 chamb
 Global Location : (-84.1449 cm, -169.227 cm) Detector Id : region -1 station 2 chamber 13 layer 2 roll 6
 Global Location : (-84.718 cm, -168.959 cm) Detector Id : region -1 station 2 chamber 13 layer 2 roll 6
 Global Location : (165.3 cm, 176.419 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (165.3 cm, 176.419 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (165.257 cm, 176.455 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (165.257 cm, 176.455 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (-64.498 cm, -156.279 cm) Detector Id : region 1 station 2 chamber 13 layer 1 roll 7
 Global Location : (64.4011 cm, 132.524 cm) Detector Id : region -1 station 2 chamber 4 layer 1 roll 8
 Global Location : (72.5023 cm, 149.195 cm) Detector Id : region -1 station 2 chamber 4 layer 2 roll 7
@@ -2226,18 +2182,14 @@ Global Location : (197.246 cm, -69.3643 cm) Detector Id : region -1 station 2 ch
 Global Location : (-119.692 cm, 84.1506 cm) Detector Id : region 1 station 2 chamber 8 layer 2 roll 8
 Global Location : (128.761 cm, -71.1988 cm) Detector Id : region -1 station 2 chamber 17 layer 2 roll 8
 Global Location : (210.759 cm, 117.75 cm) Detector Id : region 1 station 1 chamber 4 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (210.759 cm, 117.75 cm) Detector Id : region 1 station 1 chamber 4 layer 1 roll 1 **********
 Global Location : (-172.469 cm, 149.122 cm) Detector Id : region 1 station 1 chamber 15 layer 1 roll 1
 Global Location : (-183.819 cm, 135.596 cm) Detector Id : region 1 station 1 chamber 15 layer 1 roll 1
 Global Location : (-184.259 cm, -135.071 cm) Detector Id : region -1 station 1 chamber 23 layer 1 roll 1
 Global Location : (165.215 cm, -176.491 cm) Detector Id : region -1 station 1 chamber 32 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (165.215 cm, -176.491 cm) Detector Id : region -1 station 1 chamber 32 layer 1 roll 1 **********
 Global Location : (210.787 cm, 117.702 cm) Detector Id : region 1 station 1 chamber 4 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (210.787 cm, 117.702 cm) Detector Id : region 1 station 1 chamber 4 layer 2 roll 1 **********
 Global Location : (-172.503 cm, 149.082 cm) Detector Id : region 1 station 1 chamber 15 layer 2 roll 1
 Global Location : (-184.191 cm, -135.152 cm) Detector Id : region -1 station 1 chamber 23 layer 2 roll 1
 Global Location : (165.129 cm, -176.562 cm) Detector Id : region -1 station 1 chamber 32 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (165.129 cm, -176.562 cm) Detector Id : region -1 station 1 chamber 32 layer 2 roll 1 **********
 Global Location : (115.686 cm, 123.167 cm) Detector Id : region -1 station 2 chamber 3 layer 1 roll 7
 Global Location : (-87.4806 cm, -145.562 cm) Detector Id : region 1 station 2 chamber 13 layer 1 roll 7
 Global Location : (-86.6755 cm, -145.938 cm) Detector Id : region 1 station 2 chamber 13 layer 1 roll 7
@@ -2290,15 +2242,11 @@ Global Location : (-258.314 cm, 49.1585 cm) Detector Id : region -1 station 2 ch
 Global Location : (249.324 cm, -82.7085 cm) Detector Id : region 1 station 2 chamber 18 layer 1 roll 3
 Global Location : (244.527 cm, -81.0524 cm) Detector Id : region 1 station 2 chamber 18 layer 2 roll 3
 Global Location : (97.9293 cm, 221.247 cm) Detector Id : region 1 station 1 chamber 8 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (97.9293 cm, 221.247 cm) Detector Id : region 1 station 1 chamber 8 layer 1 roll 1 **********
 Global Location : (-146.061 cm, 192.563 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-146.061 cm, 192.563 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1 **********
 Global Location : (138.553 cm, 44.9141 cm) Detector Id : region 1 station 1 chamber 3 layer 1 roll 7
 Global Location : (-132.055 cm, -33.4272 cm) Detector Id : region -1 station 1 chamber 20 layer 1 roll 8
 Global Location : (98.1391 cm, 221.17 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (98.1391 cm, 221.17 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 1 **********
 Global Location : (-146.146 cm, 192.491 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-146.146 cm, 192.491 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1 **********
 Global Location : (138.553 cm, 44.9141 cm) Detector Id : region 1 station 1 chamber 3 layer 2 roll 7
 Global Location : (-143.166 cm, -35.8194 cm) Detector Id : region -1 station 1 chamber 20 layer 2 roll 7
 Global Location : (-143.101 cm, -36.1881 cm) Detector Id : region -1 station 1 chamber 20 layer 2 roll 7
@@ -2325,12 +2273,10 @@ Global Location : (-91.7728 cm, 114.355 cm) Detector Id : region 1 station 2 cha
 Global Location : (86.6722 cm, -117.926 cm) Detector Id : region -1 station 2 chamber 16 layer 2 roll 8
 Global Location : (-54.8995 cm, 221.809 cm) Detector Id : region -1 station 1 chamber 11 layer 1 roll 1
 Global Location : (203.196 cm, -130.849 cm) Detector Id : region 1 station 1 chamber 34 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (203.196 cm, -130.849 cm) Detector Id : region 1 station 1 chamber 34 layer 1 roll 1 **********
 Global Location : (95.8199 cm, 188.629 cm) Detector Id : region -1 station 1 chamber 7 layer 1 roll 2
 Global Location : (-64.2882 cm, -212.787 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 2
 Global Location : (-54.4323 cm, 221.892 cm) Detector Id : region -1 station 1 chamber 11 layer 2 roll 1
 Global Location : (203.559 cm, -130.221 cm) Detector Id : region 1 station 1 chamber 34 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (203.559 cm, -130.221 cm) Detector Id : region 1 station 1 chamber 34 layer 2 roll 1 **********
 Global Location : (95.9045 cm, 188.58 cm) Detector Id : region -1 station 1 chamber 7 layer 2 roll 2
 Global Location : (-64.1435 cm, -212.84 cm) Detector Id : region 1 station 1 chamber 26 layer 2 roll 2
 Global Location : (145.341 cm, 273.065 cm) Detector Id : region -1 station 2 chamber 4 layer 1 roll 1
@@ -2344,15 +2290,11 @@ Global Location : (-83.1537 cm, -300.947 cm) Detector Id : region 1 station 2 ch
 Global Location : (145.475 cm, 15.958 cm) Detector Id : region 1 station 2 chamber 1 layer 2 roll 8
 Global Location : (-144.847 cm, -23.1366 cm) Detector Id : region -1 station 2 chamber 10 layer 2 roll 8
 Global Location : (159.272 cm, 181.477 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (159.272 cm, 181.477 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (-147.429 cm, -191.415 cm) Detector Id : region -1 station 1 chamber 24 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-147.429 cm, -191.415 cm) Detector Id : region -1 station 1 chamber 24 layer 1 roll 1 **********
 Global Location : (-164.99 cm, 90.1883 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 4
 Global Location : (137.233 cm, -119.212 cm) Detector Id : region 1 station 1 chamber 33 layer 1 roll 4
 Global Location : (159.315 cm, 181.441 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (159.315 cm, 181.441 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (-147.429 cm, -191.415 cm) Detector Id : region -1 station 1 chamber 24 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-147.429 cm, -191.415 cm) Detector Id : region -1 station 1 chamber 24 layer 2 roll 1 **********
 Global Location : (147.797 cm, -128.568 cm) Detector Id : region 1 station 1 chamber 33 layer 2 roll 3
 Global Location : (-165.055 cm, 90.0754 cm) Detector Id : region -1 station 1 chamber 16 layer 2 roll 4
 Global Location : (-236.459 cm, 119.495 cm) Detector Id : region -1 station 2 chamber 8 layer 1 roll 3
@@ -2500,11 +2442,8 @@ Global Location : (225.949 cm, -214.106 cm) Detector Id : region 1 station 2 cha
 Global Location : (259.366 cm, -13.8468 cm) Detector Id : region 1 station 2 chamber 1 layer 2 roll 3
 Global Location : (-234.854 cm, 25.9857 cm) Detector Id : region -1 station 2 chamber 9 layer 2 roll 4
 Global Location : (98.3489 cm, 221.094 cm) Detector Id : region -1 station 1 chamber 8 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (98.3489 cm, 221.094 cm) Detector Id : region -1 station 1 chamber 8 layer 1 roll 1 **********
 Global Location : (-75.1681 cm, -229.531 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-75.1681 cm, -229.531 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 1 **********
 Global Location : (-75.0107 cm, -229.588 cm) Detector Id : region 1 station 1 chamber 26 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-75.0107 cm, -229.588 cm) Detector Id : region 1 station 1 chamber 26 layer 2 roll 1 **********
 Global Location : (117.182 cm, 68.7429 cm) Detector Id : region 1 station 1 chamber 4 layer 2 roll 8
 Global Location : (-111.088 cm, -78.1047 cm) Detector Id : region -1 station 1 chamber 23 layer 2 roll 8
 Global Location : (164.11 cm, 95.1163 cm) Detector Id : region 1 station 2 chamber 2 layer 2 roll 6
@@ -2564,9 +2503,7 @@ Global Location : (-177.608 cm, 67.1372 cm) Detector Id : region 1 station 2 cha
 Global Location : (173.989 cm, -80.9121 cm) Detector Id : region -1 station 2 chamber 17 layer 2 roll 6
 Global Location : (173.914 cm, -80.9247 cm) Detector Id : region -1 station 2 chamber 18 layer 2 roll 6
 Global Location : (-3.23705 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-3.23705 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 1 roll 1 **********
 Global Location : (-2.45569 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-2.45569 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1 **********
 Global Location : (40.4296 cm, -308.969 cm) Detector Id : region -1 station 2 chamber 15 layer 1 roll 1
 Global Location : (-135.309 cm, 63.6127 cm) Detector Id : region -1 station 2 chamber 8 layer 1 roll 8
 Global Location : (-135.459 cm, 63.6815 cm) Detector Id : region -1 station 2 chamber 9 layer 1 roll 8
@@ -2576,13 +2513,9 @@ Global Location : (-134.379 cm, 63.1755 cm) Detector Id : region -1 station 2 ch
 Global Location : (-134.528 cm, 63.2439 cm) Detector Id : region -1 station 2 chamber 9 layer 2 roll 8
 Global Location : (66.5854 cm, -131.991 cm) Detector Id : region 1 station 2 chamber 16 layer 2 roll 8
 Global Location : (203.81 cm, 129.786 cm) Detector Id : region -1 station 1 chamber 4 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (203.81 cm, 129.786 cm) Detector Id : region -1 station 1 chamber 4 layer 1 roll 1 **********
 Global Location : (-199.15 cm, -137.857 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-199.15 cm, -137.857 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 1 **********
 Global Location : (203.782 cm, 129.834 cm) Detector Id : region -1 station 1 chamber 4 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (203.782 cm, 129.834 cm) Detector Id : region -1 station 1 chamber 4 layer 2 roll 1 **********
 Global Location : (-199.15 cm, -137.857 cm) Detector Id : region 1 station 1 chamber 22 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-199.15 cm, -137.857 cm) Detector Id : region 1 station 1 chamber 22 layer 2 roll 1 **********
 Global Location : (139.205 cm, 116.862 cm) Detector Id : region 1 station 1 chamber 5 layer 1 roll 4
 Global Location : (-130.535 cm, -127.195 cm) Detector Id : region -1 station 1 chamber 23 layer 1 roll 4
 Global Location : (150.039 cm, 125.897 cm) Detector Id : region 1 station 1 chamber 5 layer 2 roll 3
@@ -2608,14 +2541,12 @@ Global Location : (-235.715 cm, -167.213 cm) Detector Id : region 1 station 2 ch
 Global Location : (-235.249 cm, -166.808 cm) Detector Id : region 1 station 2 chamber 12 layer 2 roll 2
 Global Location : (237.614 cm, 42.5778 cm) Detector Id : region -1 station 1 chamber 2 layer 1 roll 1
 Global Location : (-208.945 cm, 120.892 cm) Detector Id : region 1 station 1 chamber 16 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-208.945 cm, 120.892 cm) Detector Id : region 1 station 1 chamber 16 layer 1 roll 1 **********
 Global Location : (-176.15 cm, 103.172 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 3
 Global Location : (151.378 cm, -124.302 cm) Detector Id : region 1 station 1 chamber 33 layer 1 roll 3
 Global Location : (86.5024 cm, 130.989 cm) Detector Id : region -1 station 1 chamber 7 layer 1 roll 6
 Global Location : (-79.5375 cm, -135.01 cm) Detector Id : region 1 station 1 chamber 25 layer 1 roll 6
 Global Location : (237.498 cm, 43.2374 cm) Detector Id : region -1 station 1 chamber 2 layer 2 roll 1
 Global Location : (-208.666 cm, 121.375 cm) Detector Id : region 1 station 1 chamber 16 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-208.666 cm, 121.375 cm) Detector Id : region 1 station 1 chamber 16 layer 2 roll 1 **********
 Global Location : (-176.221 cm, 103.049 cm) Detector Id : region -1 station 1 chamber 16 layer 2 roll 3
 Global Location : (151.319 cm, -124.371 cm) Detector Id : region 1 station 1 chamber 33 layer 2 roll 3
 Global Location : (85.0592 cm, 131.822 cm) Detector Id : region -1 station 1 chamber 7 layer 2 roll 6
@@ -2672,12 +2603,9 @@ Global Location : (-160.204 cm, -56.0807 cm) Detector Id : region 1 station 2 ch
 Global Location : (154.156 cm, 61.8645 cm) Detector Id : region -1 station 2 chamber 2 layer 2 roll 7
 Global Location : (-157.34 cm, -55.0362 cm) Detector Id : region 1 station 2 chamber 11 layer 2 roll 7
 Global Location : (-201.41 cm, -133.942 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-201.41 cm, -133.942 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 1 **********
 Global Location : (15.2913 cm, 221.943 cm) Detector Id : region -1 station 1 chamber 10 layer 1 roll 2
 Global Location : (15.8504 cm, 241.398 cm) Detector Id : region -1 station 1 chamber 10 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (15.8504 cm, 241.398 cm) Detector Id : region -1 station 1 chamber 10 layer 2 roll 1 **********
 Global Location : (-201.801 cm, -133.266 cm) Detector Id : region 1 station 1 chamber 22 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-201.801 cm, -133.266 cm) Detector Id : region 1 station 1 chamber 22 layer 2 roll 1 **********
 Global Location : (-21.4248 cm, 290.307 cm) Detector Id : region -1 station 2 chamber 5 layer 1 roll 2
 Global Location : (-36.3805 cm, 165.105 cm) Detector Id : region 1 station 2 chamber 6 layer 1 roll 7
 Global Location : (58.9248 cm, -159.064 cm) Detector Id : region -1 station 2 chamber 15 layer 1 roll 7
@@ -2852,9 +2780,7 @@ Global Location : (-101.134 cm, -161.304 cm) Detector Id : region 1 station 2 ch
 Global Location : (-68.3333 cm, 130.767 cm) Detector Id : region 1 station 2 chamber 7 layer 2 roll 8
 Global Location : (81.3998 cm, -121.618 cm) Detector Id : region -1 station 2 chamber 16 layer 2 roll 8
 Global Location : (169.362 cm, 173.011 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (169.362 cm, 173.011 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (169.319 cm, 173.047 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (169.319 cm, 173.047 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (61.6557 cm, 133.805 cm) Detector Id : region 1 station 2 chamber 4 layer 1 roll 8
 Global Location : (-50.4508 cm, -139.03 cm) Detector Id : region -1 station 2 chamber 13 layer 1 roll 8
 Global Location : (61.3271 cm, 132.841 cm) Detector Id : region 1 station 2 chamber 4 layer 2 roll 8
@@ -3223,9 +3149,7 @@ Global Location : (233.171 cm, 14.8501 cm) Detector Id : region 1 station 2 cham
 Global Location : (-83.1477 cm, 120.394 cm) Detector Id : region -1 station 2 chamber 7 layer 2 roll 8
 Global Location : (73.2332 cm, -127.336 cm) Detector Id : region 1 station 2 chamber 16 layer 2 roll 8
 Global Location : (215.921 cm, 108.809 cm) Detector Id : region 1 station 1 chamber 4 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (215.921 cm, 108.809 cm) Detector Id : region 1 station 1 chamber 4 layer 1 roll 1 **********
 Global Location : (216.005 cm, 108.664 cm) Detector Id : region 1 station 1 chamber 4 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (216.005 cm, 108.664 cm) Detector Id : region 1 station 1 chamber 4 layer 2 roll 1 **********
 Global Location : (70.3068 cm, 129.771 cm) Detector Id : region -1 station 2 chamber 4 layer 1 roll 8
 Global Location : (-65.0553 cm, 134.298 cm) Detector Id : region 1 station 2 chamber 7 layer 1 roll 8
 Global Location : (-77.7128 cm, -126.317 cm) Detector Id : region 1 station 2 chamber 13 layer 1 roll 8
@@ -3266,11 +3190,9 @@ Global Location : (-194.407 cm, 24.0013 cm) Detector Id : region 1 station 2 cha
 Global Location : (206.064 cm, 36.6908 cm) Detector Id : region -1 station 2 chamber 1 layer 2 roll 5
 Global Location : (-189.322 cm, 23.4186 cm) Detector Id : region 1 station 2 chamber 9 layer 2 roll 6
 Global Location : (212.489 cm, 114.754 cm) Detector Id : region 1 station 1 chamber 4 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (212.489 cm, 114.754 cm) Detector Id : region 1 station 1 chamber 4 layer 1 roll 1 **********
 Global Location : (143.136 cm, 35.987 cm) Detector Id : region -1 station 1 chamber 2 layer 1 roll 7
 Global Location : (-140.28 cm, -40.1705 cm) Detector Id : region 1 station 1 chamber 21 layer 1 roll 7
 Global Location : (212.517 cm, 114.705 cm) Detector Id : region 1 station 1 chamber 4 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (212.517 cm, 114.705 cm) Detector Id : region 1 station 1 chamber 4 layer 2 roll 1 **********
 Global Location : (143.154 cm, 35.8864 cm) Detector Id : region -1 station 1 chamber 2 layer 2 roll 7
 Global Location : (-140.28 cm, -40.1705 cm) Detector Id : region 1 station 1 chamber 21 layer 2 roll 7
 Global Location : (190.613 cm, 47.1254 cm) Detector Id : region -1 station 2 chamber 1 layer 1 roll 6
@@ -3481,25 +3403,17 @@ Global Location : (-213.249 cm, -35.8845 cm) Detector Id : region -1 station 2 c
 Global Location : (205.112 cm, 47.565 cm) Detector Id : region 1 station 2 chamber 1 layer 2 roll 5
 Global Location : (-206.238 cm, -34.7047 cm) Detector Id : region -1 station 2 chamber 10 layer 2 roll 5
 Global Location : (-238.341 cm, 38.4556 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-238.341 cm, 38.4556 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1 **********
 Global Location : (-238.399 cm, 38.1258 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-238.399 cm, 38.1258 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1 **********
 Global Location : (240.211 cm, -27.8477 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (240.211 cm, -27.8477 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1 **********
 Global Location : (240.105 cm, -28.4522 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (240.105 cm, -28.4522 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1 **********
 Global Location : (146.328 cm, 92.8491 cm) Detector Id : region -1 station 1 chamber 4 layer 1 roll 5
 Global Location : (146.208 cm, 93.0571 cm) Detector Id : region -1 station 1 chamber 4 layer 1 roll 5
 Global Location : (134.969 cm, 85.5107 cm) Detector Id : region -1 station 1 chamber 4 layer 1 roll 6
 Global Location : (-138.697 cm, -79.0539 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 6
 Global Location : (-238.641 cm, 36.7517 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-238.641 cm, 36.7517 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1 **********
 Global Location : (-238.331 cm, 38.5105 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-238.331 cm, 38.5105 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1 **********
 Global Location : (-238.622 cm, 36.8616 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-238.622 cm, 36.8616 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1 **********
 Global Location : (240.182 cm, -28.0125 cm) Detector Id : region 1 station 1 chamber 36 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (240.182 cm, -28.0125 cm) Detector Id : region 1 station 1 chamber 36 layer 2 roll 1 **********
 Global Location : (146.488 cm, 92.5717 cm) Detector Id : region -1 station 1 chamber 4 layer 2 roll 5
 Global Location : (146.188 cm, 93.0918 cm) Detector Id : region -1 station 1 chamber 4 layer 2 roll 5
 Global Location : (134.397 cm, 86.5016 cm) Detector Id : region -1 station 1 chamber 4 layer 2 roll 6
@@ -3699,24 +3613,17 @@ Global Location : (70.96 cm, -252.472 cm) Detector Id : region -1 station 2 cham
 Global Location : (-85.4473 cm, 243.349 cm) Detector Id : region 1 station 2 chamber 6 layer 2 roll 3
 Global Location : (69.2337 cm, -247.693 cm) Detector Id : region -1 station 2 chamber 15 layer 2 roll 3
 Global Location : (160.939 cm, 180.078 cm) Detector Id : region -1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (160.939 cm, 180.078 cm) Detector Id : region -1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (160.597 cm, 180.365 cm) Detector Id : region -1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (160.597 cm, 180.365 cm) Detector Id : region -1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (-169.618 cm, -172.796 cm) Detector Id : region 1 station 1 chamber 24 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-169.618 cm, -172.796 cm) Detector Id : region 1 station 1 chamber 24 layer 1 roll 1 **********
 Global Location : (-49.6569 cm, -222.734 cm) Detector Id : region -1 station 1 chamber 27 layer 1 roll 1
 Global Location : (-50.176 cm, -222.642 cm) Detector Id : region -1 station 1 chamber 27 layer 1 roll 1
 Global Location : (80.9718 cm, 206.715 cm) Detector Id : region 1 station 1 chamber 8 layer 1 roll 2
 Global Location : (168.738 cm, 67.8105 cm) Detector Id : region 1 station 1 chamber 3 layer 1 roll 4
 Global Location : (-170.205 cm, -81.1552 cm) Detector Id : region -1 station 1 chamber 22 layer 1 roll 4
 Global Location : (160.939 cm, 180.078 cm) Detector Id : region -1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (160.939 cm, 180.078 cm) Detector Id : region -1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (159.913 cm, 180.939 cm) Detector Id : region -1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (159.913 cm, 180.939 cm) Detector Id : region -1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (-169.105 cm, -173.226 cm) Detector Id : region 1 station 1 chamber 24 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-169.105 cm, -173.226 cm) Detector Id : region 1 station 1 chamber 24 layer 2 roll 1 **********
 Global Location : (-169.618 cm, -172.796 cm) Detector Id : region 1 station 1 chamber 24 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-169.618 cm, -172.796 cm) Detector Id : region 1 station 1 chamber 24 layer 2 roll 1 **********
 Global Location : (-49.5531 cm, -222.752 cm) Detector Id : region -1 station 1 chamber 27 layer 2 roll 1
 Global Location : (-50.1241 cm, -222.651 cm) Detector Id : region -1 station 1 chamber 27 layer 2 roll 1
 Global Location : (81.0682 cm, 206.68 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 2
@@ -3771,15 +3678,11 @@ Global Location : (-48.8656 cm, -185.379 cm) Detector Id : region 1 station 2 ch
 Global Location : (129.5 cm, 68.492 cm) Detector Id : region -1 station 2 chamber 2 layer 2 roll 8
 Global Location : (-126.055 cm, -75.8789 cm) Detector Id : region 1 station 2 chamber 11 layer 2 roll 8
 Global Location : (-68.9795 cm, 231.784 cm) Detector Id : region 1 station 1 chamber 12 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-68.9795 cm, 231.784 cm) Detector Id : region 1 station 1 chamber 12 layer 1 roll 1 **********
 Global Location : (80.7273 cm, -227.508 cm) Detector Id : region -1 station 1 chamber 30 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (80.7273 cm, -227.508 cm) Detector Id : region -1 station 1 chamber 30 layer 1 roll 1 **********
 Global Location : (90.8045 cm, 157.446 cm) Detector Id : region -1 station 1 chamber 7 layer 1 roll 4
 Global Location : (-85.5277 cm, -160.493 cm) Detector Id : region 1 station 1 chamber 25 layer 1 roll 4
 Global Location : (-69.0319 cm, 231.764 cm) Detector Id : region 1 station 1 chamber 12 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-69.0319 cm, 231.764 cm) Detector Id : region 1 station 1 chamber 12 layer 2 roll 1 **********
 Global Location : (80.7273 cm, -227.508 cm) Detector Id : region -1 station 1 chamber 30 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (80.7273 cm, -227.508 cm) Detector Id : region -1 station 1 chamber 30 layer 2 roll 1 **********
 Global Location : (90.8409 cm, 157.425 cm) Detector Id : region -1 station 1 chamber 7 layer 2 roll 4
 Global Location : (-85.5641 cm, -160.472 cm) Detector Id : region 1 station 1 chamber 25 layer 2 roll 4
 Global Location : (132.588 cm, 227.517 cm) Detector Id : region -1 station 2 chamber 4 layer 1 roll 3
@@ -3798,14 +3701,10 @@ Global Location : (-152.078 cm, -218.429 cm) Detector Id : region 1 station 2 ch
 Global Location : (-149.328 cm, -214.369 cm) Detector Id : region 1 station 2 chamber 12 layer 2 roll 3
 Global Location : (-149.253 cm, -214.16 cm) Detector Id : region 1 station 2 chamber 13 layer 2 roll 3
 Global Location : (-88.227 cm, -224.778 cm) Detector Id : region -1 station 1 chamber 26 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-88.227 cm, -224.778 cm) Detector Id : region -1 station 1 chamber 26 layer 1 roll 1 **********
 Global Location : (90.0851 cm, 203.398 cm) Detector Id : region 1 station 1 chamber 8 layer 1 roll 2
 Global Location : (97.1951 cm, 221.514 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (97.1951 cm, 221.514 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 1 **********
 Global Location : (98.0342 cm, 221.208 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (98.0342 cm, 221.208 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 1 **********
 Global Location : (-88.1745 cm, -224.797 cm) Detector Id : region -1 station 1 chamber 26 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-88.1745 cm, -224.797 cm) Detector Id : region -1 station 1 chamber 26 layer 2 roll 1 **********
 Global Location : (166.264 cm, 37.448 cm) Detector Id : region -1 station 2 chamber 1 layer 1 roll 7
 Global Location : (-167.746 cm, -20.5127 cm) Detector Id : region 1 station 2 chamber 10 layer 1 roll 7
 Global Location : (-187.647 cm, -22.9464 cm) Detector Id : region 1 station 2 chamber 10 layer 2 roll 6
@@ -3873,13 +3772,9 @@ Global Location : (-192.196 cm, -171.501 cm) Detector Id : region -1 station 2 c
 Global Location : (148.005 cm, 75.0539 cm) Detector Id : region 1 station 2 chamber 2 layer 2 roll 7
 Global Location : (-139.308 cm, -93.7059 cm) Detector Id : region -1 station 2 chamber 11 layer 2 roll 7
 Global Location : (-212.88 cm, 114.077 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-212.88 cm, 114.077 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 1 **********
 Global Location : (207.494 cm, -123.406 cm) Detector Id : region 1 station 1 chamber 34 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (207.494 cm, -123.406 cm) Detector Id : region 1 station 1 chamber 34 layer 1 roll 1 **********
 Global Location : (-212.88 cm, 114.077 cm) Detector Id : region -1 station 1 chamber 16 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-212.88 cm, 114.077 cm) Detector Id : region -1 station 1 chamber 16 layer 2 roll 1 **********
 Global Location : (207.494 cm, -123.406 cm) Detector Id : region 1 station 1 chamber 34 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (207.494 cm, -123.406 cm) Detector Id : region 1 station 1 chamber 34 layer 2 roll 1 **********
 Global Location : (156.733 cm, 117.919 cm) Detector Id : region 1 station 1 chamber 5 layer 1 roll 3
 Global Location : (-151.028 cm, -124.718 cm) Detector Id : region -1 station 1 chamber 23 layer 1 roll 3
 Global Location : (156.733 cm, 117.919 cm) Detector Id : region 1 station 1 chamber 5 layer 2 roll 3
@@ -4010,13 +3905,11 @@ Global Location : (-144.841 cm, 122.539 cm) Detector Id : region 1 station 2 cha
 Global Location : (-144.582 cm, 122.909 cm) Detector Id : region 1 station 2 chamber 8 layer 2 roll 6
 Global Location : (134.342 cm, -136.577 cm) Detector Id : region -1 station 2 chamber 16 layer 2 roll 6
 Global Location : (240.618 cm, -25.5392 cm) Detector Id : region -1 station 1 chamber 36 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (240.618 cm, -25.5392 cm) Detector Id : region -1 station 1 chamber 36 layer 1 roll 1 **********
 Global Location : (-200.481 cm, 66.8876 cm) Detector Id : region 1 station 1 chamber 17 layer 1 roll 2
 Global Location : (196.99 cm, -76.4805 cm) Detector Id : region -1 station 1 chamber 35 layer 1 roll 2
 Global Location : (23.8178 cm, -143.605 cm) Detector Id : region -1 station 1 chamber 29 layer 1 roll 7
 Global Location : (-6.78443 cm, 135.854 cm) Detector Id : region 1 station 1 chamber 10 layer 1 roll 8
 Global Location : (240.618 cm, -25.5392 cm) Detector Id : region -1 station 1 chamber 36 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (240.618 cm, -25.5392 cm) Detector Id : region -1 station 1 chamber 36 layer 2 roll 1 **********
 Global Location : (-200.531 cm, 66.7499 cm) Detector Id : region 1 station 1 chamber 17 layer 2 roll 2
 Global Location : (23.8178 cm, -143.605 cm) Detector Id : region -1 station 1 chamber 29 layer 2 roll 7
 Global Location : (-6.84725 cm, 135.854 cm) Detector Id : region 1 station 1 chamber 10 layer 2 roll 8
@@ -4373,7 +4266,6 @@ Global Location : (198.16 cm, -100.662 cm) Detector Id : region -1 station 1 cha
 Global Location : (198.391 cm, -100.262 cm) Detector Id : region -1 station 1 chamber 34 layer 1 roll 2
 Global Location : (-212.205 cm, 83.5184 cm) Detector Id : region 1 station 1 chamber 17 layer 2 roll 1
 Global Location : (215.531 cm, -109.485 cm) Detector Id : region -1 station 1 chamber 34 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (215.531 cm, -109.485 cm) Detector Id : region -1 station 1 chamber 34 layer 2 roll 1 **********
 Global Location : (195.107 cm, 105.95 cm) Detector Id : region -1 station 1 chamber 4 layer 2 roll 2
 Global Location : (-198.75 cm, -99.6395 cm) Detector Id : region 1 station 1 chamber 22 layer 2 roll 2
 Global Location : (-276.904 cm, -137.108 cm) Detector Id : region 1 station 2 chamber 11 layer 1 roll 1
@@ -4403,11 +4295,8 @@ Global Location : (-117.289 cm, -203.032 cm) Detector Id : region 1 station 2 ch
 Global Location : (-155.137 cm, 141.911 cm) Detector Id : region -1 station 2 chamber 8 layer 2 roll 5
 Global Location : (-155.823 cm, 140.932 cm) Detector Id : region -1 station 2 chamber 8 layer 2 roll 5
 Global Location : (158.759 cm, 181.908 cm) Detector Id : region -1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (158.759 cm, 181.908 cm) Detector Id : region -1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (-147.386 cm, -191.451 cm) Detector Id : region 1 station 1 chamber 24 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-147.386 cm, -191.451 cm) Detector Id : region 1 station 1 chamber 24 layer 1 roll 1 **********
 Global Location : (158.759 cm, 181.908 cm) Detector Id : region -1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (158.759 cm, 181.908 cm) Detector Id : region -1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (-139.862 cm, 47.2486 cm) Detector Id : region -1 station 2 chamber 9 layer 1 roll 8
 Global Location : (83.6654 cm, -121.267 cm) Detector Id : region 1 station 2 chamber 16 layer 1 roll 8
 Global Location : (-138.928 cm, 46.8225 cm) Detector Id : region -1 station 2 chamber 9 layer 2 roll 8
@@ -4478,9 +4367,7 @@ Global Location : (-98.0381 cm, 93.657 cm) Detector Id : region -1 station 1 cha
 Global Location : (114.311 cm, 94.0376 cm) Detector Id : region 1 station 2 chamber 3 layer 1 roll 8
 Global Location : (113.575 cm, 93.3419 cm) Detector Id : region 1 station 2 chamber 3 layer 2 roll 8
 Global Location : (-166.369 cm, 175.522 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-166.369 cm, 175.522 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1 **********
 Global Location : (-166.369 cm, 175.522 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-166.369 cm, 175.522 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1 **********
 Global Location : (152.849 cm, 71.8539 cm) Detector Id : region -1 station 2 chamber 2 layer 1 roll 7
 Global Location : (-160.853 cm, -54.6901 cm) Detector Id : region 1 station 2 chamber 11 layer 1 roll 7
 Global Location : (150.067 cm, 70.6335 cm) Detector Id : region -1 station 2 chamber 2 layer 2 roll 7
@@ -4682,13 +4569,9 @@ Global Location : (-247.233 cm, -149.699 cm) Detector Id : region -1 station 2 c
 Global Location : (252.117 cm, 132.039 cm) Detector Id : region 1 station 2 chamber 2 layer 2 roll 2
 Global Location : (-244.591 cm, -148.178 cm) Detector Id : region -1 station 2 chamber 11 layer 2 roll 2
 Global Location : (72.3885 cm, 230.543 cm) Detector Id : region -1 station 1 chamber 8 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (72.3885 cm, 230.543 cm) Detector Id : region -1 station 1 chamber 8 layer 1 roll 1 **********
 Global Location : (-85.5522 cm, -225.752 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-85.5522 cm, -225.752 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 1 **********
 Global Location : (72.336 cm, 230.562 cm) Detector Id : region -1 station 1 chamber 8 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (72.336 cm, 230.562 cm) Detector Id : region -1 station 1 chamber 8 layer 2 roll 1 **********
 Global Location : (-85.6047 cm, -225.732 cm) Detector Id : region 1 station 1 chamber 26 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-85.6047 cm, -225.732 cm) Detector Id : region 1 station 1 chamber 26 layer 2 roll 1 **********
 Global Location : (142.849 cm, 134.466 cm) Detector Id : region -1 station 1 chamber 5 layer 1 roll 3
 Global Location : (142.878 cm, 134.431 cm) Detector Id : region -1 station 1 chamber 5 layer 1 roll 3
 Global Location : (-170.298 cm, -113.308 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 3
@@ -4801,11 +4684,9 @@ Global Location : (-138.686 cm, 188.036 cm) Detector Id : region -1 station 2 ch
 Global Location : (-138.458 cm, 188.196 cm) Detector Id : region -1 station 2 chamber 7 layer 2 roll 4
 Global Location : (131.093 cm, -193.353 cm) Detector Id : region 1 station 2 chamber 16 layer 2 roll 4
 Global Location : (-168.849 cm, 173.441 cm) Detector Id : region 1 station 1 chamber 14 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-168.849 cm, 173.441 cm) Detector Id : region 1 station 1 chamber 14 layer 1 roll 1 **********
 Global Location : (-157.98 cm, -23.3961 cm) Detector Id : region -1 station 1 chamber 20 layer 1 roll 6
 Global Location : (42.5657 cm, -154.395 cm) Detector Id : region 1 station 1 chamber 30 layer 1 roll 6
 Global Location : (-168.849 cm, 173.441 cm) Detector Id : region 1 station 1 chamber 14 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-168.849 cm, 173.441 cm) Detector Id : region 1 station 1 chamber 14 layer 2 roll 1 **********
 Global Location : (-157.794 cm, -24.4502 cm) Detector Id : region -1 station 1 chamber 20 layer 2 roll 6
 Global Location : (40.4807 cm, -151.97 cm) Detector Id : region 1 station 1 chamber 29 layer 2 roll 6
 Global Location : (41.8026 cm, -154.673 cm) Detector Id : region 1 station 1 chamber 30 layer 2 roll 6
@@ -4850,11 +4731,9 @@ Global Location : (157.75 cm, -150.535 cm) Detector Id : region -1 station 2 cha
 Global Location : (-159.637 cm, 173.366 cm) Detector Id : region 1 station 2 chamber 7 layer 2 roll 4
 Global Location : (170.996 cm, -163.023 cm) Detector Id : region -1 station 2 chamber 17 layer 2 roll 4
 Global Location : (96.7756 cm, 221.667 cm) Detector Id : region -1 station 1 chamber 8 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (96.7756 cm, 221.667 cm) Detector Id : region -1 station 1 chamber 8 layer 1 roll 1 **********
 Global Location : (-26.2643 cm, 179.927 cm) Detector Id : region 1 station 1 chamber 11 layer 1 roll 4
 Global Location : (77.3906 cm, -150.114 cm) Detector Id : region -1 station 1 chamber 31 layer 1 roll 5
 Global Location : (96.7756 cm, 221.667 cm) Detector Id : region -1 station 1 chamber 8 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (96.7756 cm, 221.667 cm) Detector Id : region -1 station 1 chamber 8 layer 2 roll 1 **********
 Global Location : (-26.0988 cm, 179.957 cm) Detector Id : region 1 station 1 chamber 11 layer 2 roll 4
 Global Location : (77.5257 cm, -150.036 cm) Detector Id : region -1 station 1 chamber 31 layer 2 roll 5
 Global Location : (-23.6062 cm, 242.829 cm) Detector Id : region 1 station 2 chamber 6 layer 1 roll 4
@@ -4923,7 +4802,6 @@ Global Location : (-204.891 cm, -53.9101 cm) Detector Id : region -1 station 2 c
 Global Location : (171.88 cm, 78.4544 cm) Detector Id : region 1 station 2 chamber 2 layer 2 roll 6
 Global Location : (-166.169 cm, 20.6733 cm) Detector Id : region -1 station 2 chamber 9 layer 2 roll 7
 Global Location : (-213.996 cm, 112.144 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-213.996 cm, 112.144 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 1 **********
 Global Location : (39.2582 cm, 166.106 cm) Detector Id : region 1 station 2 chamber 5 layer 1 roll 7
 Global Location : (-5.27226 cm, 170.001 cm) Detector Id : region 1 station 2 chamber 5 layer 1 roll 7
 Global Location : (-13.5134 cm, -168.358 cm) Detector Id : region -1 station 2 chamber 14 layer 1 roll 7
@@ -5204,10 +5082,8 @@ Global Location : (95.7698 cm, -169.765 cm) Detector Id : region -1 station 2 ch
 Global Location : (-83.5392 cm, 172.149 cm) Detector Id : region 1 station 2 chamber 7 layer 2 roll 6
 Global Location : (93.3076 cm, -165.309 cm) Detector Id : region -1 station 2 chamber 16 layer 2 roll 6
 Global Location : (170.944 cm, -171.684 cm) Detector Id : region 1 station 1 chamber 32 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (170.944 cm, -171.684 cm) Detector Id : region 1 station 1 chamber 32 layer 1 roll 1 **********
 Global Location : (149.226 cm, -164.51 cm) Detector Id : region 1 station 1 chamber 32 layer 1 roll 2
 Global Location : (170.944 cm, -171.684 cm) Detector Id : region 1 station 1 chamber 32 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (170.944 cm, -171.684 cm) Detector Id : region 1 station 1 chamber 32 layer 2 roll 1 **********
 Global Location : (-34.7423 cm, 165.544 cm) Detector Id : region -1 station 2 chamber 6 layer 1 roll 7
 Global Location : (22.5341 cm, -168.815 cm) Detector Id : region 1 station 2 chamber 15 layer 1 roll 7
 Global Location : (65.6383 cm, 212.296 cm) Detector Id : region -1 station 1 chamber 8 layer 1 roll 2
@@ -5269,15 +5145,10 @@ Global Location : (257.93 cm, 2.56856 cm) Detector Id : region 1 station 2 chamb
 Global Location : (-259.82 cm, 23.9782 cm) Detector Id : region -1 station 2 chamber 9 layer 2 roll 3
 Global Location : (-260.25 cm, 23.9533 cm) Detector Id : region -1 station 2 chamber 10 layer 2 roll 3
 Global Location : (157.177 cm, 183.235 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (157.177 cm, 183.235 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (-169.875 cm, -172.58 cm) Detector Id : region -1 station 1 chamber 24 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-169.875 cm, -172.58 cm) Detector Id : region -1 station 1 chamber 24 layer 1 roll 1 **********
 Global Location : (157.134 cm, 183.271 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (157.134 cm, 183.271 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (157.904 cm, 182.625 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (157.904 cm, 182.625 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (-169.96 cm, -172.509 cm) Detector Id : region -1 station 1 chamber 24 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-169.96 cm, -172.509 cm) Detector Id : region -1 station 1 chamber 24 layer 2 roll 1 **********
 Global Location : (-6.51928 cm, 170.111 cm) Detector Id : region -1 station 2 chamber 5 layer 1 roll 7
 Global Location : (-6.27792 cm, 170.089 cm) Detector Id : region -1 station 2 chamber 5 layer 1 roll 7
 Global Location : (23.2752 cm, -168.616 cm) Detector Id : region 1 station 2 chamber 15 layer 1 roll 7
@@ -5288,9 +5159,7 @@ Global Location : (-6.12551 cm, 167.027 cm) Detector Id : region -1 station 2 ch
 Global Location : (-94.7482 cm, -138.822 cm) Detector Id : region 1 station 2 chamber 13 layer 2 roll 7
 Global Location : (22.8949 cm, -165.574 cm) Detector Id : region 1 station 2 chamber 15 layer 2 roll 7
 Global Location : (-142.341 cm, 195.684 cm) Detector Id : region 1 station 1 chamber 14 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-142.341 cm, 195.684 cm) Detector Id : region 1 station 1 chamber 14 layer 1 roll 1 **********
 Global Location : (-142.683 cm, 195.397 cm) Detector Id : region 1 station 1 chamber 14 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-142.683 cm, 195.397 cm) Detector Id : region 1 station 1 chamber 14 layer 2 roll 1 **********
 Global Location : (-199.846 cm, -68.6317 cm) Detector Id : region 1 station 1 chamber 21 layer 1 roll 2
 Global Location : (201.896 cm, 30.5676 cm) Detector Id : region -1 station 1 chamber 2 layer 1 roll 3
 Global Location : (-199.813 cm, -68.7235 cm) Detector Id : region 1 station 1 chamber 21 layer 2 roll 2
@@ -5436,11 +5305,9 @@ Global Location : (-11.7174 cm, -146.863 cm) Detector Id : region -1 station 2 c
 Global Location : (3.4128 cm, 146.573 cm) Detector Id : region 1 station 2 chamber 5 layer 2 roll 8
 Global Location : (-11.6368 cm, -145.853 cm) Detector Id : region -1 station 2 chamber 14 layer 2 roll 8
 Global Location : (239.688 cm, -30.8157 cm) Detector Id : region -1 station 1 chamber 36 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (239.688 cm, -30.8157 cm) Detector Id : region -1 station 1 chamber 36 layer 1 roll 1 **********
 Global Location : (108.615 cm, 81.0522 cm) Detector Id : region 1 station 1 chamber 5 layer 1 roll 8
 Global Location : (-104.251 cm, -86.2523 cm) Detector Id : region -1 station 1 chamber 23 layer 1 roll 8
 Global Location : (239.717 cm, -30.6508 cm) Detector Id : region -1 station 1 chamber 36 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (239.717 cm, -30.6508 cm) Detector Id : region -1 station 1 chamber 36 layer 2 roll 1 **********
 Global Location : (116.869 cm, 87.1702 cm) Detector Id : region 1 station 1 chamber 5 layer 2 roll 7
 Global Location : (-104.131 cm, -86.396 cm) Detector Id : region -1 station 1 chamber 23 layer 2 roll 8
 Global Location : (158.034 cm, 116.317 cm) Detector Id : region 1 station 2 chamber 3 layer 1 roll 6
@@ -5554,11 +5421,8 @@ Global Location : (169.831 cm, 125 cm) Detector Id : region -1 station 2 chamber
 Global Location : (-161.373 cm, -133.459 cm) Detector Id : region 1 station 2 chamber 12 layer 2 roll 5
 Global Location : (137.62 cm, 129.571 cm) Detector Id : region 1 station 2 chamber 3 layer 2 roll 6
 Global Location : (-236.403 cm, 49.4482 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-236.403 cm, 49.4482 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1 **********
 Global Location : (234.455 cm, -60.4959 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (234.455 cm, -60.4959 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1 **********
 Global Location : (-236.403 cm, 49.4482 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-236.403 cm, 49.4482 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1 **********
 Global Location : (167.369 cm, 24.817 cm) Detector Id : region 1 station 2 chamber 1 layer 1 roll 7
 Global Location : (-166.823 cm, -31.052 cm) Detector Id : region -1 station 2 chamber 10 layer 1 roll 7
 Global Location : (164.359 cm, 24.3706 cm) Detector Id : region 1 station 2 chamber 1 layer 2 roll 7
@@ -5967,10 +5831,8 @@ Global Location : (228.439 cm, -130.947 cm) Detector Id : region 1 station 2 cha
 Global Location : (-217.435 cm, 137.838 cm) Detector Id : region -1 station 2 chamber 8 layer 2 roll 3
 Global Location : (224.029 cm, -128.419 cm) Detector Id : region 1 station 2 chamber 17 layer 2 roll 3
 Global Location : (-155.595 cm, 184.563 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-155.595 cm, 184.563 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1 **********
 Global Location : (164.372 cm, -158.772 cm) Detector Id : region 1 station 1 chamber 33 layer 1 roll 1
 Global Location : (-155.552 cm, 184.598 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-155.552 cm, 184.598 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1 **********
 Global Location : (164.541 cm, -158.57 cm) Detector Id : region 1 station 1 chamber 33 layer 2 roll 1
 Global Location : (-53.8109 cm, 205.038 cm) Detector Id : region -1 station 1 chamber 11 layer 1 roll 2
 Global Location : (93.364 cm, -202.205 cm) Detector Id : region 1 station 1 chamber 30 layer 1 roll 2
@@ -5992,7 +5854,6 @@ Global Location : (7.13253 cm, -221.943 cm) Detector Id : region -1 station 1 ch
 Global Location : (-103.804 cm, 102.741 cm) Detector Id : region -1 station 1 chamber 15 layer 1 roll 7
 Global Location : (108.671 cm, -96.9408 cm) Detector Id : region 1 station 1 chamber 33 layer 1 roll 7
 Global Location : (7.70195 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (7.70195 cm, -241.398 cm) Detector Id : region -1 station 1 chamber 28 layer 2 roll 1 **********
 Global Location : (-103.804 cm, 102.741 cm) Detector Id : region -1 station 1 chamber 15 layer 2 roll 7
 Global Location : (108.649 cm, -96.9666 cm) Detector Id : region 1 station 1 chamber 33 layer 2 roll 7
 Global Location : (-138.816 cm, 139.624 cm) Detector Id : region -1 station 2 chamber 7 layer 1 roll 6
@@ -6002,11 +5863,9 @@ Global Location : (157.595 cm, -138.4 cm) Detector Id : region 1 station 2 chamb
 Global Location : (-135.193 cm, 135.981 cm) Detector Id : region -1 station 2 chamber 7 layer 2 roll 6
 Global Location : (-135.359 cm, 136.081 cm) Detector Id : region -1 station 2 chamber 8 layer 2 roll 6
 Global Location : (-198.787 cm, 138.486 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-198.787 cm, 138.486 cm) Detector Id : region -1 station 1 chamber 16 layer 1 roll 1 **********
 Global Location : (-156.691 cm, 12.0998 cm) Detector Id : region -1 station 1 chamber 19 layer 1 roll 6
 Global Location : (157.64 cm, -25.3226 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 6
 Global Location : (-198.787 cm, 138.486 cm) Detector Id : region -1 station 1 chamber 16 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-198.787 cm, 138.486 cm) Detector Id : region -1 station 1 chamber 16 layer 2 roll 1 **********
 Global Location : (-156.691 cm, 12.0636 cm) Detector Id : region -1 station 1 chamber 19 layer 2 roll 6
 Global Location : (157.633 cm, -25.3589 cm) Detector Id : region 1 station 1 chamber 36 layer 2 roll 6
 Global Location : (-217.646 cm, 14.379 cm) Detector Id : region -1 station 2 chamber 10 layer 1 roll 5
@@ -6121,15 +5980,10 @@ Global Location : (139.843 cm, -89.4475 cm) Detector Id : region 1 station 2 cha
 Global Location : (-146.708 cm, 21.6976 cm) Detector Id : region 1 station 2 chamber 9 layer 1 roll 8
 Global Location : (-145.7 cm, 21.5484 cm) Detector Id : region 1 station 2 chamber 9 layer 2 roll 8
 Global Location : (65.3608 cm, -233.101 cm) Detector Id : region 1 station 1 chamber 30 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (65.3608 cm, -233.101 cm) Detector Id : region 1 station 1 chamber 30 layer 1 roll 1 **********
 Global Location : (64.2594 cm, -233.501 cm) Detector Id : region 1 station 1 chamber 30 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (64.2594 cm, -233.501 cm) Detector Id : region 1 station 1 chamber 30 layer 1 roll 1 **********
 Global Location : (65.623 cm, -233.005 cm) Detector Id : region 1 station 1 chamber 30 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (65.623 cm, -233.005 cm) Detector Id : region 1 station 1 chamber 30 layer 2 roll 1 **********
 Global Location : (64.7314 cm, -233.33 cm) Detector Id : region 1 station 1 chamber 30 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (64.7314 cm, -233.33 cm) Detector Id : region 1 station 1 chamber 30 layer 2 roll 1 **********
 Global Location : (63.5776 cm, -233.75 cm) Detector Id : region 1 station 1 chamber 30 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (63.5776 cm, -233.75 cm) Detector Id : region 1 station 1 chamber 30 layer 2 roll 1 **********
 Global Location : (45.0665 cm, -307.726 cm) Detector Id : region 1 station 2 chamber 15 layer 1 roll 1
 Global Location : (44.7766 cm, -306.756 cm) Detector Id : region 1 station 2 chamber 15 layer 2 roll 1
 Global Location : (-51.1323 cm, 165.65 cm) Detector Id : region 1 station 1 chamber 12 layer 1 roll 5
@@ -6182,9 +6036,7 @@ Global Location : (181.555 cm, -186.823 cm) Detector Id : region -1 station 2 ch
 Global Location : (152.696 cm, 114.495 cm) Detector Id : region 1 station 2 chamber 3 layer 2 roll 6
 Global Location : (-147.106 cm, -120.085 cm) Detector Id : region -1 station 2 chamber 12 layer 2 roll 6
 Global Location : (18.2503 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (18.2503 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 1 roll 1 **********
 Global Location : (18.1386 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (18.1386 cm, 241.398 cm) Detector Id : region 1 station 1 chamber 10 layer 2 roll 1 **********
 Global Location : (147.361 cm, 129.089 cm) Detector Id : region -1 station 1 chamber 5 layer 1 roll 3
 Global Location : (-153.037 cm, -122.324 cm) Detector Id : region 1 station 1 chamber 23 layer 1 roll 3
 Global Location : (147.361 cm, 129.089 cm) Detector Id : region -1 station 1 chamber 5 layer 2 roll 3
@@ -6256,15 +6108,11 @@ Global Location : (-146.666 cm, -13.9631 cm) Detector Id : region -1 station 2 c
 Global Location : (143.884 cm, 34.1485 cm) Detector Id : region 1 station 2 chamber 1 layer 2 roll 8
 Global Location : (-145.667 cm, -13.7626 cm) Detector Id : region -1 station 2 chamber 10 layer 2 roll 8
 Global Location : (-236.267 cm, 50.2177 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-236.267 cm, 50.2177 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1 **********
 Global Location : (240.483 cm, -26.3087 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (240.483 cm, -26.3087 cm) Detector Id : region 1 station 1 chamber 36 layer 1 roll 1 **********
 Global Location : (-134.723 cm, 153.435 cm) Detector Id : region 1 station 1 chamber 14 layer 1 roll 3
 Global Location : (127.384 cm, -159.593 cm) Detector Id : region -1 station 1 chamber 32 layer 1 roll 3
 Global Location : (-236.267 cm, 50.2177 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-236.267 cm, 50.2177 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1 **********
 Global Location : (240.483 cm, -26.3087 cm) Detector Id : region 1 station 1 chamber 36 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (240.483 cm, -26.3087 cm) Detector Id : region 1 station 1 chamber 36 layer 2 roll 1 **********
 Global Location : (-134.723 cm, 153.435 cm) Detector Id : region 1 station 1 chamber 14 layer 2 roll 3
 Global Location : (127.348 cm, -159.624 cm) Detector Id : region -1 station 1 chamber 32 layer 2 roll 3
 Global Location : (-192.551 cm, 215.945 cm) Detector Id : region 1 station 2 chamber 7 layer 1 roll 2
@@ -6399,9 +6247,7 @@ Global Location : (-151.671 cm, -74.379 cm) Detector Id : region 1 station 2 cha
 Global Location : (184.231 cm, 51.9673 cm) Detector Id : region -1 station 2 chamber 2 layer 2 roll 6
 Global Location : (180.738 cm, 59.459 cm) Detector Id : region -1 station 2 chamber 2 layer 2 roll 6
 Global Location : (160.212 cm, 180.688 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (160.212 cm, 180.688 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (160.255 cm, 180.652 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (160.255 cm, 180.652 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (-46.7008 cm, -127.575 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 8
 Global Location : (42.4801 cm, 129.111 cm) Detector Id : region -1 station 1 chamber 8 layer 2 roll 8
 Global Location : (41.3881 cm, 129.508 cm) Detector Id : region -1 station 1 chamber 8 layer 2 roll 8
@@ -6414,9 +6260,7 @@ Global Location : (-94.9343 cm, -113.415 cm) Detector Id : region -1 station 2 c
 Global Location : (86.045 cm, 120.872 cm) Detector Id : region 1 station 2 chamber 3 layer 2 roll 8
 Global Location : (-94.3065 cm, -112.611 cm) Detector Id : region -1 station 2 chamber 12 layer 2 roll 8
 Global Location : (-235.307 cm, -55.6591 cm) Detector Id : region 1 station 1 chamber 20 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-235.307 cm, -55.6591 cm) Detector Id : region 1 station 1 chamber 20 layer 1 roll 1 **********
 Global Location : (-235.307 cm, -55.6591 cm) Detector Id : region 1 station 1 chamber 20 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-235.307 cm, -55.6591 cm) Detector Id : region 1 station 1 chamber 20 layer 2 roll 1 **********
 Global Location : (69.6292 cm, 116.034 cm) Detector Id : region -1 station 1 chamber 7 layer 1 roll 8
 Global Location : (68.979 cm, 116.41 cm) Detector Id : region -1 station 1 chamber 7 layer 2 roll 8
 Global Location : (-164.352 cm, 39.1888 cm) Detector Id : region -1 station 2 chamber 9 layer 1 roll 7
@@ -6805,13 +6649,11 @@ Global Location : (-41.8308 cm, -254.495 cm) Detector Id : region 1 station 2 ch
 Global Location : (194.899 cm, -170.022 cm) Detector Id : region 1 station 2 chamber 17 layer 2 roll 3
 Global Location : (-171.124 cm, 162.84 cm) Detector Id : region -1 station 2 chamber 8 layer 2 roll 4
 Global Location : (171.328 cm, 171.361 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (171.328 cm, 171.361 cm) Detector Id : region 1 station 1 chamber 6 layer 1 roll 1 **********
 Global Location : (-112.883 cm, 109.238 cm) Detector Id : region -1 station 1 chamber 15 layer 1 roll 6
 Global Location : (110.476 cm, -115.697 cm) Detector Id : region 1 station 1 chamber 32 layer 1 roll 6
 Global Location : (143.183 cm, 35.7188 cm) Detector Id : region 1 station 1 chamber 2 layer 1 roll 7
 Global Location : (-138.139 cm, -46.0525 cm) Detector Id : region -1 station 1 chamber 21 layer 1 roll 7
 Global Location : (171.286 cm, 171.397 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (171.286 cm, 171.397 cm) Detector Id : region 1 station 1 chamber 6 layer 2 roll 1 **********
 Global Location : (-112.906 cm, 109.211 cm) Detector Id : region -1 station 1 chamber 15 layer 2 roll 6
 Global Location : (110.42 cm, -115.745 cm) Detector Id : region 1 station 1 chamber 32 layer 2 roll 6
 Global Location : (143.195 cm, 35.6518 cm) Detector Id : region 1 station 1 chamber 2 layer 2 roll 7
@@ -7069,9 +6911,7 @@ Global Location : (-145.37 cm, 81.5543 cm) Detector Id : region -1 station 2 cha
 Global Location : (139.433 cm, -90.0322 cm) Detector Id : region 1 station 2 chamber 17 layer 2 roll 7
 Global Location : (207.879 cm, 95.4053 cm) Detector Id : region -1 station 1 chamber 3 layer 1 roll 1
 Global Location : (-215.754 cm, -109.099 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-215.754 cm, -109.099 cm) Detector Id : region 1 station 1 chamber 22 layer 1 roll 1 **********
 Global Location : (-215.726 cm, -109.147 cm) Detector Id : region 1 station 1 chamber 22 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-215.726 cm, -109.147 cm) Detector Id : region 1 station 1 chamber 22 layer 2 roll 1 **********
 Global Location : (143.611 cm, 63.5657 cm) Detector Id : region 1 station 1 chamber 3 layer 1 roll 6
 Global Location : (143.239 cm, 64.587 cm) Detector Id : region 1 station 1 chamber 3 layer 1 roll 6
 Global Location : (142.991 cm, 65.2678 cm) Detector Id : region 1 station 1 chamber 3 layer 1 roll 6
@@ -7160,13 +7000,11 @@ Global Location : (-2.17523 cm, 166.681 cm) Detector Id : region 1 station 2 cha
 Global Location : (-6.63388 cm, -165.911 cm) Detector Id : region -1 station 2 chamber 14 layer 2 roll 7
 Global Location : (-218.046 cm, 67.4711 cm) Detector Id : region 1 station 1 chamber 17 layer 1 roll 1
 Global Location : (-72.5458 cm, -230.485 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-72.5458 cm, -230.485 cm) Detector Id : region 1 station 1 chamber 26 layer 1 roll 1 **********
 Global Location : (218.045 cm, -41.5214 cm) Detector Id : region -1 station 1 chamber 36 layer 1 roll 2
 Global Location : (132.722 cm, -124.588 cm) Detector Id : region -1 station 1 chamber 33 layer 1 roll 4
 Global Location : (-152.112 cm, 82.8299 cm) Detector Id : region 1 station 1 chamber 16 layer 1 roll 5
 Global Location : (-218.028 cm, 67.5207 cm) Detector Id : region 1 station 1 chamber 17 layer 2 roll 1
 Global Location : (-72.336 cm, -230.562 cm) Detector Id : region 1 station 1 chamber 26 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-72.336 cm, -230.562 cm) Detector Id : region 1 station 1 chamber 26 layer 2 roll 1 **********
 Global Location : (218.054 cm, -41.4709 cm) Detector Id : region -1 station 1 chamber 36 layer 2 roll 2
 Global Location : (132.587 cm, -124.748 cm) Detector Id : region -1 station 1 chamber 33 layer 2 roll 4
 Global Location : (-152.112 cm, 82.8299 cm) Detector Id : region 1 station 1 chamber 16 layer 2 roll 5
@@ -7267,13 +7105,10 @@ Global Location : (-191.603 cm, -35.8054 cm) Detector Id : region -1 station 2 c
 Global Location : (184.327 cm, 51.7626 cm) Detector Id : region 1 station 2 chamber 2 layer 2 roll 6
 Global Location : (-186.607 cm, -34.826 cm) Detector Id : region -1 station 2 chamber 10 layer 2 roll 6
 Global Location : (-235.86 cm, 52.5262 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-235.86 cm, 52.5262 cm) Detector Id : region -1 station 1 chamber 18 layer 1 roll 1 **********
 Global Location : (66.8249 cm, 175.721 cm) Detector Id : region 1 station 1 chamber 8 layer 1 roll 4
 Global Location : (-58.0852 cm, -178.902 cm) Detector Id : region -1 station 1 chamber 26 layer 1 roll 4
 Global Location : (-235.86 cm, 52.5262 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-235.86 cm, 52.5262 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1 **********
 Global Location : (-235.947 cm, 52.0315 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-235.947 cm, 52.0315 cm) Detector Id : region -1 station 1 chamber 18 layer 2 roll 1 **********
 Global Location : (66.8657 cm, 175.707 cm) Detector Id : region 1 station 1 chamber 8 layer 2 roll 4
 Global Location : (-58.0035 cm, -178.932 cm) Detector Id : region -1 station 1 chamber 26 layer 2 roll 4
 Global Location : (95.0857 cm, 245.005 cm) Detector Id : region 1 station 2 chamber 4 layer 1 roll 3
@@ -7465,13 +7300,9 @@ Global Location : (-295.915 cm, 85.2345 cm) Detector Id : region -1 station 2 ch
 Global Location : (-295.706 cm, 86.0167 cm) Detector Id : region -1 station 2 chamber 9 layer 2 roll 1
 Global Location : (290.885 cm, -104.006 cm) Detector Id : region 1 station 2 chamber 18 layer 2 roll 1
 Global Location : (-139.22 cm, 198.303 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-139.22 cm, 198.303 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1 **********
 Global Location : (159.058 cm, -181.657 cm) Detector Id : region 1 station 1 chamber 32 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (159.058 cm, -181.657 cm) Detector Id : region 1 station 1 chamber 32 layer 1 roll 1 **********
 Global Location : (-139.177 cm, 198.338 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-139.177 cm, 198.338 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1 **********
 Global Location : (159.101 cm, -181.621 cm) Detector Id : region 1 station 1 chamber 32 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (159.101 cm, -181.621 cm) Detector Id : region 1 station 1 chamber 32 layer 2 roll 1 **********
 Global Location : (-50.9126 cm, 189.906 cm) Detector Id : region 1 station 1 chamber 11 layer 1 roll 3
 Global Location : (-53.0101 cm, 197.944 cm) Detector Id : region 1 station 1 chamber 12 layer 1 roll 3
 Global Location : (39.9868 cm, -191.832 cm) Detector Id : region -1 station 1 chamber 29 layer 1 roll 3
@@ -7482,7 +7313,6 @@ Global Location : (-76.4248 cm, 276.993 cm) Detector Id : region 1 station 2 cha
 Global Location : (-75.6169 cm, 274.065 cm) Detector Id : region 1 station 2 chamber 6 layer 2 roll 2
 Global Location : (55.9205 cm, -279.343 cm) Detector Id : region -1 station 2 chamber 15 layer 2 roll 2
 Global Location : (-68.9795 cm, 231.784 cm) Detector Id : region 1 station 1 chamber 12 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-68.9795 cm, 231.784 cm) Detector Id : region 1 station 1 chamber 12 layer 1 roll 1 **********
 Global Location : (-39.9677 cm, 141.813 cm) Detector Id : region -1 station 2 chamber 6 layer 1 roll 8
 Global Location : (77.7506 cm, -125.409 cm) Detector Id : region 1 station 2 chamber 16 layer 1 roll 8
 Global Location : (-39.5917 cm, 140.865 cm) Detector Id : region -1 station 2 chamber 6 layer 2 roll 8
@@ -7914,12 +7744,9 @@ Global Location : (247.496 cm, 89.7444 cm) Detector Id : region -1 station 2 cha
 Global Location : (-274.322 cm, -84.42 cm) Detector Id : region 1 station 2 chamber 11 layer 2 roll 2
 Global Location : (242.718 cm, 88.0119 cm) Detector Id : region -1 station 2 chamber 2 layer 2 roll 3
 Global Location : (-158.502 cm, 182.123 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-158.502 cm, 182.123 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1 **********
 Global Location : (-159.186 cm, 181.549 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-159.186 cm, 181.549 cm) Detector Id : region -1 station 1 chamber 14 layer 1 roll 1 **********
 Global Location : (-130.931 cm, -35.8704 cm) Detector Id : region 1 station 1 chamber 21 layer 1 roll 8
 Global Location : (-158.545 cm, 182.087 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (-158.545 cm, 182.087 cm) Detector Id : region -1 station 1 chamber 14 layer 2 roll 1 **********
 Global Location : (-130.909 cm, -35.9292 cm) Detector Id : region 1 station 1 chamber 21 layer 2 roll 8
 Global Location : (58.3357 cm, 135.353 cm) Detector Id : region -1 station 2 chamber 4 layer 1 roll 8
 Global Location : (187.469 cm, 24.9713 cm) Detector Id : region -1 station 2 chamber 1 layer 2 roll 6
@@ -8111,9 +7938,7 @@ Global Location : (-123.355 cm, -84.0655 cm) Detector Id : region 1 station 2 ch
 Global Location : (124.621 cm, 78.9542 cm) Detector Id : region -1 station 2 chamber 2 layer 2 roll 8
 Global Location : (-122.492 cm, -83.5194 cm) Detector Id : region 1 station 2 chamber 11 layer 2 roll 8
 Global Location : (142.213 cm, -195.791 cm) Detector Id : region -1 station 1 chamber 32 layer 1 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (142.213 cm, -195.791 cm) Detector Id : region -1 station 1 chamber 32 layer 1 roll 1 **********
 Global Location : (142.256 cm, -195.755 cm) Detector Id : region -1 station 1 chamber 32 layer 2 roll 1
-********** RECONSTRUCTION IN UNSENSITIVE REGION!!! Global Location : (142.256 cm, -195.755 cm) Detector Id : region -1 station 1 chamber 32 layer 2 roll 1 **********
 Global Location : (135.303 cm, 0.281539 cm) Detector Id : region -1 station 1 chamber 1 layer 1 roll 8
 Global Location : (-135.303 cm, 4.59847 cm) Detector Id : region 1 station 1 chamber 19 layer 1 roll 8
 Global Location : (135.303 cm, 0.250257 cm) Detector Id : region -1 station 1 chamber 1 layer 2 roll 8

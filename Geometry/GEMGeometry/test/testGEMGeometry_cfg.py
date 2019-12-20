@@ -13,8 +13,8 @@ process.maxEvents = cms.untracked.PSet(
 )
 
 process.source = cms.Source ("PoolSource",
-	fileNames = cms.untracked.vstring('file:/cms/ldap_home/chdlalsnr/CMSSW_11_0_0_pre3/src/20011/step3.root'),
-	skipBadFiles = cms.untracked.bool(True)
+        fileNames = cms.untracked.vstring('file:/cms/ldap_home/chdlalsnr/CMSSW_11_0_0_pre3/src/20011/step3.root'),
+        skipBadFiles = cms.untracked.bool(True)
 )
 
 process.MessageLogger = cms.Service("MessageLogger",
@@ -27,10 +27,12 @@ process.MessageLogger = cms.Service("MessageLogger",
         GEMGeometryBuilderFromDDD = cms.untracked.PSet(
             limit = cms.untracked.int32(-1)
             )
-        )                                   )
+        )
+                                    )
 
 process.test = cms.EDAnalyzer("GEMGeometryAnalyzer",
-	GEMRecHitInputLabel = cms.InputTag('gemRecHits'),)
+        GEMRecHitInputLabel = cms.InputTag('gemRecHits'),)
+
 
 process.p = cms.Path(process.test)
 
